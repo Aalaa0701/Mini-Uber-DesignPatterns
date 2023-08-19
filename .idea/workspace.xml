@@ -2,18 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abcd2540-3cb0-433d-a850-fcf78f1cb3fb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Mini-Uber-DesignPatterns.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BusRides.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BusRidesFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FileHandling.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MotorBikeRides.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MotorBikeRidesFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NormalRides.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NormalRidesFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PremiumRides.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PremiumRidesFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ReadFromFiles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SupportTickets.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SupportTicketsFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UserFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Users.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/WriteInFiles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -27,12 +44,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/projects/Mini-Uber-DesignPatterns&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
