@@ -1,11 +1,13 @@
-public class NormalRidesFile implements FileHandling{
+import java.util.ArrayList;
+
+public class NormalRidesFile implements FileHandlingForRidesRead, FileHandlingForRidesWrite {
     @Override
-    public void Write() {
+    public void Write(ArrayList Rides) {
 
     }
 
     @Override
-    public void Read() {
+    public void ReadRides(ArrayList Rides) {
 
     }
 }

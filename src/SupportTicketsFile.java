@@ -1,11 +1,13 @@
-public class SupportTicketsFile implements FileHandling{
+import java.util.Queue;
+
+public class SupportTicketsFile implements FileHandlingForSupportRead, FileHandlingForSupportWrite {
     @Override
-    public void Write() {
+    public void Write(Queue Support) {
 
     }
 
     @Override
-    public void Read() {
+    public void ReadSupport(Queue Support) {
 
     }
 }

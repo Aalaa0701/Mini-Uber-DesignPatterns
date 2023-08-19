@@ -2,22 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abcd2540-3cb0-433d-a850-fcf78f1cb3fb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/BusRides.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BusRidesFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FileHandling.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MotorBikeRides.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MotorBikeRidesFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NormalRides.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NormalRidesFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PremiumRides.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PremiumRidesFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ReadFromFiles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SupportTickets.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SupportTicketsFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UserFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Users.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/WriteInFiles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BusRidesTaken.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FileHandlingForRidesRead.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FileHandlingForRidesWrite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FileHandlingForSupportRead.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FileHandlingForSupportWrite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FileHandlingForUsersRead.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FileHandlingForUsersWrite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MotorBikeRidesTaken.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MotorBikesTakenFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NormalRidesTaken.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NormalRidesTakenFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PremiumRidesTaken.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PremiumRidesTakenFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BusRidesFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BusRidesFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileHandling.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MotorBikeRidesFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MotorBikeRidesFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NormalRidesFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NormalRidesFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PremiumRidesFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PremiumRidesFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReadFromFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReadFromFiles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SupportTicketsFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SupportTicketsFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Users.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WriteInFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WriteInFiles.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,13 +55,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/projects/Mini-Uber-DesignPatterns&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "D:/projects/Mini-Uber-DesignPatterns"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -72,5 +84,15 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.util.NoSuchElementException" package="java.util" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
