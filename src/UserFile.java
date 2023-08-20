@@ -1,8 +1,7 @@
-import javax.swing.*;
-import java.io.File;
-import java.io.FileNotFoundException;
+import java.io.*;
+import java.util.*;
 import java.util.HashMap;
-import java.util.Scanner;
+
 
 public class UserFile implements FileHandlingForUsersRead, FileHandlingForUsersWrite {
 
@@ -30,7 +29,20 @@ public class UserFile implements FileHandlingForUsersRead, FileHandlingForUsersW
 
     @Override
     public void Write(HashMap Users) {
-
+        File usersFile = new File("src/Users.txt");
+        try{
+            PrintWriter usersWriter = new PrintWriter(new FileWriter(usersFile));
+            String Line="";
+            // Printing all elements of a Map
+            for(Object key:Users.keySet()){
+                User userTemp = (User) Users.get(key);
+                Line = userTemp.getUserName()+" "+userTemp.getPassword();
+                usersWriter.println(Line);
+            }
+            usersWriter.close();
+        } catch (IOException ex) {
+            System.out.println("Exception");
+        }
     }
 
 

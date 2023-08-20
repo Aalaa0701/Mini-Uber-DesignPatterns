@@ -13,6 +13,9 @@ public class WriteInFiles implements FileHandlingForUsersWrite, FileHandlingForS
     MotorBikesTakenFile motorBikesTakenFile = new MotorBikesTakenFile();
     SupportTicketsFile supportTicketsFile = new SupportTicketsFile();
 
+    public WriteInFiles(HashMap Users){
+        this.Write(Users);
+    }
     public WriteInFiles(HashMap Users, ArrayList NormalRides,ArrayList PremiumRides,
                         ArrayList BusRides,ArrayList MotorBikeRides, Queue Support,
                         ArrayList NormalRidesTaken,ArrayList PremiumRidesTaken, ArrayList MotorBikeRidesTaken) {
