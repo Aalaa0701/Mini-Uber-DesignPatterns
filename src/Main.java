@@ -14,7 +14,6 @@ public class Main {
             System.out.println(set.getKey() + " = "
                     + set.getValue().getPassword());
         }
-        
-        
+
     }
 }

@@ -35,7 +35,7 @@ public class UserFile implements FileHandlingForUsersRead, FileHandlingForUsersW
     }
 
     @Override
-    public void Write(HashMap Users) {
+    public void write(HashMap Users) {
         File usersFile = new File("src/Users.txt");
         try{
             PrintWriter usersWriter = new PrintWriter(new FileWriter(usersFile));

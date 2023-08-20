@@ -9,12 +9,12 @@ public class BusRidesFile implements FileHandlingForRidesRead, FileHandlingForRi
     }
 
     @Override
-    public void Write(ArrayList Rides) {
+    public void write(ArrayList Rides) {
 
     }
 
     @Override
-    public void ReadRides(ArrayList Rides) {
+    public void readRides(ArrayList Rides) {
 
     }
 }

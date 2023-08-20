@@ -9,12 +9,12 @@ public class MotorBikeRidesFile implements FileHandlingForRidesRead, FileHandlin
     }
 
     @Override
-    public void ReadRides(ArrayList Rides) {
+    public void readRides(ArrayList Rides) {
 
     }
 
     @Override
-    public void Write(ArrayList Rides) {
+    public void write(ArrayList Rides) {
 
     }
 }

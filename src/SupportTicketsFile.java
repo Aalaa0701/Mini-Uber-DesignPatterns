@@ -9,12 +9,12 @@ public class SupportTicketsFile implements FileHandlingForSupportRead, FileHandl
     }
 
     @Override
-    public void Write(Queue Support) {
+    public void write(Queue Support) {
 
     }
 
     @Override
-    public void ReadSupport(Queue Support) {
+    public void readSupport(Queue Support) {
 
     }
 }

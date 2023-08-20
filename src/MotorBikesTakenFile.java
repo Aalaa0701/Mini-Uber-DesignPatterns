@@ -12,7 +12,7 @@ public class MotorBikesTakenFile implements FileHandlingForRidesWrite{
     }
 
     @Override
-    public void Write(ArrayList Rides) {
+    public void write(ArrayList Rides) {
 
     }
 

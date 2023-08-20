@@ -12,7 +12,7 @@ public class PremiumRidesTakenFile implements FileHandlingForRidesWrite{
     }
 
     @Override
-    public void Write(ArrayList Rides) {
+    public void write(ArrayList Rides) {
 
     }
 }

@@ -1,5 +1,5 @@
 import java.util.Queue;
 
 public interface FileHandlingForSupportWrite {
-    void Write(Queue Support);
+    void write(Queue Support);
 }

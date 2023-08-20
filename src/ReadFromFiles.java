@@ -11,7 +11,7 @@ public class ReadFromFiles implements FileHandlingForUsersRead, FileHandlingForS
     public ReadFromFiles(HashMap Users, ArrayList NormalRides,ArrayList PremiumRides,
                          ArrayList BusRides,ArrayList MotorBikeRides, Queue Support) {
         this.readUsers(Users);
-        this.ReadSupport(Support);
+        this.readSupport(Support);
         this.ReadAllRides(NormalRides, PremiumRides, BusRides, MotorBikeRides);
     }
 
@@ -21,14 +21,14 @@ public class ReadFromFiles implements FileHandlingForUsersRead, FileHandlingForS
     }
 
    public void ReadAllRides(ArrayList NormalRides,ArrayList PremiumRides,ArrayList BusRides,ArrayList MotorBikeRides){
-       NormalRidesFile.getInstance().ReadRides(NormalRides);
-        PremiumRidesFile.getInstance().ReadRides(PremiumRides);
-        BusRidesFile.getInstance().ReadRides(BusRides);
-        MotorBikeRidesFile.getInstance().ReadRides(MotorBikeRides);
+       NormalRidesFile.getInstance().readRides(NormalRides);
+        PremiumRidesFile.getInstance().readRides(PremiumRides);
+        BusRidesFile.getInstance().readRides(BusRides);
+        MotorBikeRidesFile.getInstance().readRides(MotorBikeRides);
    }
 
     @Override
-    public void ReadSupport(Queue Support) {
-        SupportTicketsFile.getInstance().ReadSupport(Support);
+    public void readSupport(Queue Support) {
+        SupportTicketsFile.getInstance().readSupport(Support);
     }
 }
