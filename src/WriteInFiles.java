@@ -3,16 +3,6 @@ import java.util.HashMap;
 import java.util.Queue;
 
 public class WriteInFiles implements FileHandlingForUsersWrite, FileHandlingForSupportWrite{
-    UserFile userFile = new UserFile();
-    NormalRidesFile normalRidesFile = new NormalRidesFile();
-    NormalRidesTakenFile normalRidesTakenFile = new NormalRidesTakenFile();
-    PremiumRidesFile premiumRidesFile = new PremiumRidesFile();
-    PremiumRidesTakenFile premiumRidesTakenFile = new PremiumRidesTakenFile();
-    BusRidesFile busRidesFile = new BusRidesFile();
-    MotorBikeRidesFile motorBikeRidesFile = new MotorBikeRidesFile();
-    MotorBikesTakenFile motorBikesTakenFile = new MotorBikesTakenFile();
-    SupportTicketsFile supportTicketsFile = new SupportTicketsFile();
-
     public WriteInFiles(HashMap Users){
         this.Write(Users);
     }
@@ -26,21 +16,21 @@ public class WriteInFiles implements FileHandlingForUsersWrite, FileHandlingForS
 
     @Override
     public void Write(HashMap Users) {
-        userFile.Write(Users);
+        UserFile.getInstance().Write(Users);
     }
     public void WriteAllRides(ArrayList NormalRides, ArrayList PremiumRides, ArrayList BusRides, ArrayList MotorBikeRides,
                               ArrayList NormalRidesTaken,ArrayList PremiumRidesTaken, ArrayList MotorBikeRidesTaken){
-        normalRidesFile.Write(NormalRides);
-        premiumRidesFile.Write(PremiumRides);
-        busRidesFile.Write(BusRides);
-        motorBikeRidesFile.Write(MotorBikeRides);
-        normalRidesTakenFile.Write(NormalRidesTaken);
-        premiumRidesFile.Write(PremiumRidesTaken);
-        motorBikeRidesFile.Write(MotorBikeRidesTaken);
+        NormalRidesFile.getInstance().Write(NormalRides);
+        PremiumRidesFile.getInstance().Write(PremiumRides);
+        BusRidesFile.getInstance().Write(BusRides);
+        MotorBikeRidesFile.getInstance().Write(MotorBikeRides);
+        NormalRidesTakenFile.getInstance().Write(NormalRidesTaken);
+        PremiumRidesTakenFile.getInstance().Write(PremiumRidesTaken);
+        MotorBikesTakenFile.getInstance().Write(MotorBikeRidesTaken);
     }
 
     @Override
     public void Write(Queue Support) {
-        supportTicketsFile.Write(Support);
+        SupportTicketsFile.getInstance().Write(Support);
     }
 }

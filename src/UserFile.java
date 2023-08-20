@@ -4,6 +4,13 @@ import java.util.HashMap;
 
 
 public class UserFile implements FileHandlingForUsersRead, FileHandlingForUsersWrite {
+    private static UserFile instance = new UserFile();
+
+    private UserFile(){};
+
+    public static UserFile getInstance() {
+        return instance;
+    }
 
     @Override
     public void readUsers(HashMap Users) {

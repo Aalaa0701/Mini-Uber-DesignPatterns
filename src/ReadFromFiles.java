@@ -3,12 +3,6 @@ import java.util.HashMap;
 import java.util.Queue;
 
 public class ReadFromFiles implements FileHandlingForUsersRead, FileHandlingForSupportRead {
-    UserFile userFile = new UserFile();
-    NormalRidesFile normalRidesFile = new NormalRidesFile();
-    PremiumRidesFile premiumRidesFile = new PremiumRidesFile();
-    BusRidesFile busRidesFile = new BusRidesFile();
-    MotorBikeRidesFile motorBikeRidesFile = new MotorBikeRidesFile();
-    SupportTicketsFile supportTicketsFile = new SupportTicketsFile();
 
     public ReadFromFiles(HashMap Users){
         this.readUsers(Users);
@@ -23,18 +17,18 @@ public class ReadFromFiles implements FileHandlingForUsersRead, FileHandlingForS
 
     @Override
     public void readUsers(HashMap Users) {
-        userFile.readUsers(Users);
+        UserFile.getInstance().readUsers(Users);
     }
 
    public void ReadAllRides(ArrayList NormalRides,ArrayList PremiumRides,ArrayList BusRides,ArrayList MotorBikeRides){
-        normalRidesFile.ReadRides(NormalRides);
-        premiumRidesFile.ReadRides(PremiumRides);
-        busRidesFile.ReadRides(BusRides);
-        motorBikeRidesFile.ReadRides(MotorBikeRides);
+       NormalRidesFile.getInstance().ReadRides(NormalRides);
+        PremiumRidesFile.getInstance().ReadRides(PremiumRides);
+        BusRidesFile.getInstance().ReadRides(BusRides);
+        MotorBikeRidesFile.getInstance().ReadRides(MotorBikeRides);
    }
 
     @Override
     public void ReadSupport(Queue Support) {
-        supportTicketsFile.ReadSupport(Support);
+        SupportTicketsFile.getInstance().ReadSupport(Support);
     }
 }

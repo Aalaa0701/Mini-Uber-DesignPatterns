@@ -3,6 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="abcd2540-3cb0-433d-a850-fcf78f1cb3fb" name="Changes" comment="AddedReadFromUserFileFeature">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BusRidesFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BusRidesFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MotorBikeRidesFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MotorBikeRidesFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MotorBikesTakenFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MotorBikesTakenFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NormalRidesFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NormalRidesFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NormalRidesTakenFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NormalRidesTakenFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PremiumRidesFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PremiumRidesFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PremiumRidesTakenFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PremiumRidesTakenFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReadFromFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReadFromFiles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SupportTicketsFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SupportTicketsFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UserFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WriteInFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WriteInFiles.java" afterDir="false" />
     </list>
@@ -31,14 +40,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "D:/projects/Mini-Uber-DesignPatterns"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/projects/Mini-Uber-DesignPatterns&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
