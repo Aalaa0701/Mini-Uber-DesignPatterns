@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class Visa implements PaymentMethod{
-
     public Visa(){
         Pay();
     }

@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class Payment {
-
     public Payment() {
         while(true){
             System.out.println("Type V for Visa Or C for Cash");

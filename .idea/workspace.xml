@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="abcd2540-3cb0-433d-a850-fcf78f1cb3fb" name="Changes" comment="Added Payment feature">
-      <change afterPath="$PROJECT_DIR$/src/Cash.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Payment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PaymentMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Visa.java" afterDir="false" />
+    <list default="true" id="abcd2540-3cb0-433d-a850-fcf78f1cb3fb" name="Changes" comment="Added Write Users in files Feature">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
