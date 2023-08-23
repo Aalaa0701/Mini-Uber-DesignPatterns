@@ -20,7 +20,5 @@ public class Main {
         //write into files
         WriteInFiles writeInFiles = new WriteInFiles(Users);
 
-
-
     }
 }
