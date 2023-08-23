@@ -14,6 +14,13 @@ public class Main {
             System.out.println(set.getKey() + " = "
                     + set.getValue().getPassword());
         }
+        //add user
+        User user1 = new User("person1","12345");
+        Users.put(user1.getUserName(), user1);
+        //write into files
+        WriteInFiles writeInFiles = new WriteInFiles(Users);
+
+
 
     }
 }
