@@ -9,4 +9,16 @@ public class SupportTicket {
         this.agentName = agentName;
         this.ticketContent = ticketContent;
     }
+
+    public String getCustomerName() {
+        return customerName;
+    }
+
+    public String getAgentName() {
+        return agentName;
+    }
+
+    public String getTicketContent() {
+        return ticketContent;
+    }
 }

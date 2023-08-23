@@ -6,6 +6,9 @@ public class WriteInFiles implements FileHandlingForUsersWrite, FileHandlingForS
     public WriteInFiles(HashMap Users){
         this.write(Users);
     }
+    public WriteInFiles(Queue Support){
+        this.write(Support);
+    }
     public WriteInFiles(HashMap Users, ArrayList NormalRides,ArrayList PremiumRides,
                         ArrayList BusRides,ArrayList MotorBikeRides, Queue Support,
                         ArrayList NormalRidesTaken,ArrayList PremiumRidesTaken, ArrayList MotorBikeRidesTaken) {

@@ -8,6 +8,9 @@ public class ReadFromFiles implements FileHandlingForUsersRead, FileHandlingForS
         this.readUsers(Users);
 
     }
+    public ReadFromFiles(Queue support){
+        this.readSupport(support);
+    }
     public ReadFromFiles(HashMap Users, ArrayList NormalRides,ArrayList PremiumRides,
                          ArrayList BusRides,ArrayList MotorBikeRides, Queue Support) {
         this.readUsers(Users);

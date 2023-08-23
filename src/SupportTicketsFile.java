@@ -1,5 +1,4 @@
-import java.io.File;
-import java.io.FileNotFoundException;
+import java.io.*;
 import java.util.Queue;
 import java.util.Scanner;
 
@@ -13,7 +12,20 @@ public class SupportTicketsFile implements FileHandlingForSupportRead, FileHandl
 
     @Override
     public void write(Queue Support) {
+        File ticketsFile = new File("src/SupportTickets.txt");
+        try{
+            PrintWriter ticketsWriter = new PrintWriter(new FileWriter(ticketsFile));
+            while(!Support.isEmpty()){
+                String line ="";
+                SupportTicket temp = (SupportTicket) Support.poll();
+                line= temp.getCustomerName()+" "+temp.getAgentName()+" "+temp.getTicketContent()+"//";
+                ticketsWriter.println(line);
+            }
 
+            ticketsWriter.close();
+        } catch (IOException ex) {
+            System.out.println("Exception");
+        }
 
     }
 
@@ -22,11 +34,26 @@ public class SupportTicketsFile implements FileHandlingForSupportRead, FileHandl
         try{
             File supportTicketsFile = new File("src/SupportTickets.txt");
             Scanner ticketsScan = new Scanner(supportTicketsFile);
-            StringBuilder stringBuilder = new StringBuilder();
+           // StringBuilder ticketContent = new StringBuilder();
             ticketsScan.useDelimiter("//");
             while(ticketsScan.hasNext()){
-                String word = ticketsScan.next();
-                stringBuilder.append(word);
+                //System.out.println(ticketsScan.next());
+                String customerName, agentName, ticketContent ="";
+                String[] line = ticketsScan.next().split(" ");
+                if (line.length > 2) {
+                    customerName = line[0];
+                    agentName = line[1];
+                    for(int i =2;i< line.length;i++){
+                        ticketContent+=line[i];
+                        if(i< line.length-1){
+                            ticketContent+=" ";
+                        }
+                    }
+
+                    SupportTicket supportTicketTemp = new SupportTicket(customerName,agentName,(String)ticketContent);
+                    Support.add(supportTicketTemp);
+                }
+
 
             }
             ticketsScan.close();
@@ -35,4 +62,5 @@ public class SupportTicketsFile implements FileHandlingForSupportRead, FileHandl
         }
 
     }
+
 }
