@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Mini-Uber-DesignPatterns.iml" filepath="$PROJECT_DIR$/Mini-Uber-DesignPatterns.iml" />
+      <module fileurl="file://$PROJECT_DIR$/osc-HandsOn.iml" filepath="$PROJECT_DIR$/osc-HandsOn.iml" />
     </modules>
   </component>
 </project>
