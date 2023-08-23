@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="abcd2540-3cb0-433d-a850-fcf78f1cb3fb" name="Changes" comment="">
+    <list default="true" id="1ae26b83-2702-456e-9127-343c58332cc0" name="Changes" comment="Edited class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ReadFromFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReadFromFiles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SupportTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SupportTicket.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SupportTickets.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/SupportTickets.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SupportTicketsFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SupportTicketsFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WriteInFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WriteInFiles.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

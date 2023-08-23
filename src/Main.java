@@ -25,7 +25,7 @@ public class Main {
         User user1 = new User("person1","12345");
         Users.put(user1.getUserName(), user1);
         //add ticket
-        SupportTicket supportTicket = new SupportTicket("anonymous2","Driver3","juytgrfdfghjiljhgfcvbnjytgfbnmnbvcfgj");
+        SupportTicket supportTicket = new SupportTicket("anonymous6","Driver6","juytgrfdfghjiljhgfcvbnjytgfbnmnbvcfgj");
         tickets.add(supportTicket);
         //write into files
         WriteInFiles writeInFiles = new WriteInFiles(Users);

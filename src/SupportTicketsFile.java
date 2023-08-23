@@ -18,7 +18,7 @@ public class SupportTicketsFile implements FileHandlingForSupportRead, FileHandl
             while(!Support.isEmpty()){
                 String line ="";
                 SupportTicket temp = (SupportTicket) Support.poll();
-                line= temp.getCustomerName()+" "+temp.getAgentName()+" "+temp.getTicketContent()+"//";
+                line= temp.getCustomerName()+" "+temp.getAgentName()+" "+temp.getTicketContent();
                 ticketsWriter.println(line);
             }
 
@@ -34,12 +34,10 @@ public class SupportTicketsFile implements FileHandlingForSupportRead, FileHandl
         try{
             File supportTicketsFile = new File("src/SupportTickets.txt");
             Scanner ticketsScan = new Scanner(supportTicketsFile);
-           // StringBuilder ticketContent = new StringBuilder();
-            ticketsScan.useDelimiter("//");
-            while(ticketsScan.hasNext()){
-                //System.out.println(ticketsScan.next());
+            ticketsScan.useDelimiter("!!");
+            while(ticketsScan.hasNextLine()){
                 String customerName, agentName, ticketContent ="";
-                String[] line = ticketsScan.next().split(" ");
+                String[] line = ticketsScan.nextLine().split(" ");
                 if (line.length > 2) {
                     customerName = line[0];
                     agentName = line[1];
@@ -49,9 +47,9 @@ public class SupportTicketsFile implements FileHandlingForSupportRead, FileHandl
                             ticketContent+=" ";
                         }
                     }
-
-                    SupportTicket supportTicketTemp = new SupportTicket(customerName,agentName,(String)ticketContent);
-                    Support.add(supportTicketTemp);
+                    SupportTicket supportTicketTemp = new SupportTicket(customerName,agentName,ticketContent);
+                    //Support.add(supportTicketTemp);
+                    Support.offer(supportTicketTemp);
                 }
 
 
