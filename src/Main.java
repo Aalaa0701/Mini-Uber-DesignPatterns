@@ -1,21 +1,39 @@
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        HashMap<String,User> Users = new HashMap<>();
+        HashMap<String,User> users = new HashMap<>();
         Queue<SupportTicket> tickets = new LinkedList<>();
+        ArrayList<NormalRide> normalRides = new ArrayList<>();
+        ArrayList<NormalRide> normalRidesTaken = new ArrayList<>();
+        ArrayList<PremiumRide> premiumRides = new ArrayList<>();
+        ArrayList<PremiumRide> premiumRidesTaken = new ArrayList<>();
+        ArrayList<Motorbike> motorbikes = new ArrayList<>();
+        ArrayList<Motorbike> motorbikesTaken = new ArrayList<>();
+        ArrayList<Bus> buses = new ArrayList<>();
+        ArrayList<Bus> busesFull = new ArrayList<>();
         //Read From Files
-        ReadFromFiles readFromFiles = new ReadFromFiles(Users);
-        ReadFromFiles readFromFiles1 = new ReadFromFiles(tickets);
+        ReadFromFiles readFromFiles2 = new ReadFromFiles(users,normalRides,premiumRides,buses,motorbikes,
+                normalRidesTaken,premiumRidesTaken,busesFull,motorbikesTaken,tickets);
         for(SupportTicket item:tickets){
             System.out.println(item.getCustomerName()+" "+item.getAgentName()+" "+item.getTicketContent());
         }
+        for(int i =0;i<normalRides.size();i++){
+            System.out.println(normalRides.get(i).getDriver().getDriverName()+" "+normalRides.get(i).getDriver().driverRate);
+        }
+        for(int i =0;i<premiumRides.size();i++){
+            System.out.println(premiumRides.get(i).getDriver().getDriverName()+" "+premiumRides.get(i).getDriver().driverRate);
+        }
+        for(int i =0;i<motorbikes.size();i++){
+            System.out.println(motorbikes.get(i).getDriver().getDriverName()+" "+motorbikes.get(i).getDriver().driverRate);
+        }
+        for(int i =0;i<buses.size();i++){
+            System.out.println(buses.get(i).getDriver().getDriverName()+" "+buses.get(i).getDriver().driverRate+" "
+            +buses.get(i).getPassengerCount());
+        }
         //Check if reading is successful
         for (HashMap.Entry<String, User> set :
-                Users.entrySet()) {
+                users.entrySet()) {
 
             // Printing all elements of a Map
             System.out.println(set.getKey() + " = "
@@ -23,13 +41,21 @@ public class Main {
         }
         //add user
         User user1 = new User("person1","12345");
-        Users.put(user1.getUserName(), user1);
+        users.put(user1.getUserName(), user1);
         //add ticket
-        SupportTicket supportTicket = new SupportTicket("anonymous6","Driver6","juytgrfdfghjiljhgfcvbnjytgfbnmnbvcfgj");
-        tickets.add(supportTicket);
+        //SupportTicket supportTicket = new SupportTicket("anonymous6","Driver6","juytgrfdfghjiljhgfcvbnjytgfbnmnbvcfgj");
+       // tickets.add(supportTicket);
+        //add normal Ride
+        RideFactory rideFactory = new RideFactory();
+        //normalRides.add((NormalRide)rideFactory.createRide("Normal","Driver5",1.5f));
+        //premiumRides.add((PremiumRide)rideFactory.createRide("Premium","premium",4.5f));
+        //motorbikes.add((Motorbike)rideFactory.createRide("Motorbike","bike",3.5f) );
+        //buses.add((Bus)rideFactory.createRide("Bus","bus",3.3f) );
         //write into files
-        WriteInFiles writeInFiles = new WriteInFiles(Users);
-        WriteInFiles writeInFiles1 = new WriteInFiles(tickets);
+        //WriteInFiles writeInFiles1 = new WriteInFiles(tickets);
+        //WriteInFiles writeInFiles2 = new WriteInFiles(normalRides);
+        WriteInFiles writeInFiles3 = new WriteInFiles(users,normalRides,premiumRides,buses,motorbikes,tickets,
+                normalRidesTaken,premiumRidesTaken,motorbikesTaken,busesFull);
 
     }
 }

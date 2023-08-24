@@ -1,5 +1,4 @@
-import java.io.File;
-import java.io.FileNotFoundException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -12,12 +11,24 @@ public class NormalRidesFile implements FileHandlingForRidesRead, FileHandlingFo
     }
 
     @Override
-    public void write(ArrayList Rides) {
+    public void write(ArrayList rides) {
+        File normalRidesTxtFile = new File("src/NormalRides.txt");
+        try{
+            PrintWriter normalRidesWriter = new PrintWriter(new FileWriter(normalRidesTxtFile));
+            for(int i =0;i<rides.size();i++){
+                NormalRide temp = (NormalRide)rides.get(i);
+                String line = temp.getDriver().getDriverName()+" "+temp.getDriver().getDriverRate();
+                normalRidesWriter.println(line);
+            }
 
+            normalRidesWriter.close();
+        } catch (IOException ex) {
+            System.out.println("Exception");
+        }
     }
 
     @Override
-    public void readRides(ArrayList Rides) {
+    public void readRides(ArrayList rides) {
         try{
             File normalRidesText = new File("src/NormalRides.txt");
             Scanner normalRidesScan = new Scanner(normalRidesText);
@@ -25,13 +36,11 @@ public class NormalRidesFile implements FileHandlingForRidesRead, FileHandlingFo
                 String info = normalRidesScan.nextLine();
                 String driverName;
                 float driverRate;
-                String[] line = normalRidesScan.nextLine().split(" ");
+                String[] line = info.split(" ");
                 driverName = line[0];
-                driverRate = Float.parseFloat(info);
-                System.out.println(driverName+" "+driverRate);
-
-
-
+                driverRate = Float.parseFloat(line[1]);
+                NormalRide temp = new NormalRide(driverName,driverRate);
+                rides.add(temp);
             }
             normalRidesScan.close();
         }catch (FileNotFoundException e){

@@ -1,11 +1,27 @@
-public class Bus extends DriverInfo implements Ride{
+public class Bus implements Ride{
     int passengerCount;
     private final double BASE_FARE = 1.5;
     private final double RATE_PER_KM = 0.1;
     private final double PASSENGER_CHARGE = 0.5;
+    DriverInfo driver;
 
     public Bus(String driverName, float driverRate) {
-        super(driverName, driverRate);
+        driver = new DriverInfo();
+        driver.setDriverName(driverName);
+        driver.setDriverRate(driverRate);
+    }
+    public DriverInfo getDriver() {
+        return driver;
+    }
+
+    public int getPassengerCount() {
+        return passengerCount;
+    }
+
+    public void setPassengerCount(int passengerCount) {
+        if(passengerCount <= 30){
+            this.passengerCount = passengerCount;
+        }
     }
 
     @Override
