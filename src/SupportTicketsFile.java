@@ -34,7 +34,6 @@ public class SupportTicketsFile implements FileHandlingForSupportRead, FileHandl
         try{
             File supportTicketsFile = new File("src/SupportTickets.txt");
             Scanner ticketsScan = new Scanner(supportTicketsFile);
-            ticketsScan.useDelimiter("!!");
             while(ticketsScan.hasNextLine()){
                 String customerName, agentName, ticketContent ="";
                 String[] line = ticketsScan.nextLine().split(" ");
