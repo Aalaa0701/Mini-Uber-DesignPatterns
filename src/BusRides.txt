@@ -1,2 +1,3 @@
-BusDriver 2.5
-bus 3.3
+BusDriver 2.5 25
+bus 3.3 0
+bus32 3.2 0

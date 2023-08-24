@@ -1,6 +1,6 @@
 import java.io.*;
-import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.Vector;
 
 public class BusRidesFullFile implements FileHandlingForRidesRead, FileHandlingForRidesWrite{
     private static BusRidesFullFile instance;
@@ -14,7 +14,7 @@ public class BusRidesFullFile implements FileHandlingForRidesRead, FileHandlingF
     }
 
     @Override
-    public void readRides(ArrayList rides) {
+    public void readRides(Vector rides) {
         try{
             File busesFullText = new File("src/BusRidesTaken.txt");
             Scanner busesFullScan = new Scanner(busesFullText);
@@ -38,13 +38,13 @@ public class BusRidesFullFile implements FileHandlingForRidesRead, FileHandlingF
     }
 
     @Override
-    public void write(ArrayList rides) {
+    public void write(Vector rides) {
         File busRidesFullTxtFile = new File("src/BusRidesTaken.txt");
         try{
             PrintWriter busRidesFullWriter = new PrintWriter(new FileWriter(busRidesFullTxtFile));
             for(int i =0;i<rides.size();i++){
                 Bus temp = (Bus)rides.get(i);
-                String line = temp.getDriverName()+" "+temp.getDriverRate();
+                String line = temp.getDriverName()+" "+temp.getDriverRate()+" "+temp.getPassengerCount();
                 busRidesFullWriter.println(line);
             }
 

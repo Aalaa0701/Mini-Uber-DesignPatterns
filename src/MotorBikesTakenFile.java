@@ -1,6 +1,6 @@
 import java.io.*;
-import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.Vector;
 
 public class MotorBikesTakenFile implements FileHandlingForRidesWrite, FileHandlingForRidesRead{
     private static MotorBikesTakenFile instance;
@@ -14,7 +14,7 @@ public class MotorBikesTakenFile implements FileHandlingForRidesWrite, FileHandl
     }
 
     @Override
-    public void write(ArrayList rides) {
+    public void write(Vector rides) {
         File bikeRidesTakenTxtFile = new File("src/MotorBikeRidesTaken.txt");
         try{
             PrintWriter bikeRidesTakenWriter = new PrintWriter(new FileWriter(bikeRidesTakenTxtFile));
@@ -31,7 +31,7 @@ public class MotorBikesTakenFile implements FileHandlingForRidesWrite, FileHandl
     }
 
     @Override
-    public void readRides(ArrayList rides) {
+    public void readRides(Vector rides) {
         try{
             File motorBikesTakenText = new File("src/MotorBikeRidesTaken.txt");
             Scanner motorBikesTakenScan = new Scanner(motorBikesTakenText);

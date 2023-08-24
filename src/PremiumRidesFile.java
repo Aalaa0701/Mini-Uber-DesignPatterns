@@ -1,6 +1,6 @@
 import java.io.*;
-import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.Vector;
 
 public class PremiumRidesFile implements FileHandlingForRidesRead, FileHandlingForRidesWrite {
     private static PremiumRidesFile instance = new PremiumRidesFile();
@@ -11,7 +11,7 @@ public class PremiumRidesFile implements FileHandlingForRidesRead, FileHandlingF
     }
 
     @Override
-    public void readRides(ArrayList rides) {
+    public void readRides(Vector rides) {
         try{
             File premiumRidesText = new File("src/PremiumRides.txt");
             Scanner premiumRidesScan = new Scanner(premiumRidesText);
@@ -32,7 +32,7 @@ public class PremiumRidesFile implements FileHandlingForRidesRead, FileHandlingF
     }
 
     @Override
-    public void write(ArrayList rides) {
+    public void write(Vector rides) {
         File premiumRidesTxtFile = new File("src/PremiumRides.txt");
         try{
             PrintWriter premiumRidesWriter = new PrintWriter(new FileWriter(premiumRidesTxtFile));

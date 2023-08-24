@@ -1,5 +1,5 @@
-import java.util.ArrayList;
+import java.util.Vector;
 
 public interface FileHandlingForRidesWrite {
-    void write(ArrayList rides);
+    void write(Vector rides);
 }

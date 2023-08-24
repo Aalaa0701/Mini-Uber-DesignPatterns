@@ -1,16 +1,17 @@
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Queue;
+import java.util.Vector;
 
 public class ReadFromFiles implements FileHandlingForUsersRead, FileHandlingForSupportRead {
 
 
-    public ReadFromFiles(HashMap Users, ArrayList NormalRides,ArrayList PremiumRides,
-                         ArrayList BusRides,ArrayList MotorBikeRides,ArrayList normalRidesTaken,
-                         ArrayList premiumRidesTaken, ArrayList busRidesFull, ArrayList motorBikesTaken,Queue Support) {
+    public ReadFromFiles(HashMap Users, Vector normalRides, Vector premiumRides, Vector busRides, Vector motorBikeRides,
+                         Vector normalRidesTaken, Vector premiumRidesTaken, Vector busRidesFull,
+                         Vector motorBikesTaken,Queue Support) {
         this.readUsers(Users);
         this.readSupport(Support);
-        this.ReadAllRides(NormalRides, PremiumRides, BusRides, MotorBikeRides,
+        this.ReadAllRides(normalRides, premiumRides, busRides, motorBikeRides,
                 normalRidesTaken,premiumRidesTaken,busRidesFull,motorBikesTaken);
     }
 
@@ -19,9 +20,9 @@ public class ReadFromFiles implements FileHandlingForUsersRead, FileHandlingForS
         UserFile.getInstance().readUsers(Users);
     }
 
-   public void ReadAllRides(ArrayList normalRides,ArrayList premiumRides,ArrayList busRides,ArrayList motorBikeRides,
-                            ArrayList normalRidesTaken, ArrayList premiumRidesTaken, ArrayList busRidesFull,
-                            ArrayList motorBikesTaken){
+   public void ReadAllRides(Vector normalRides, Vector premiumRides, Vector busRides, Vector motorBikeRides,
+                            Vector normalRidesTaken, Vector premiumRidesTaken, Vector busRidesFull,
+                            Vector motorBikesTaken){
         NormalRidesFile.getInstance().readRides(normalRides);
         PremiumRidesFile.getInstance().readRides(premiumRides);
         BusRidesFile.getInstance().readRides(busRides);

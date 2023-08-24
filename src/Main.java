@@ -4,14 +4,14 @@ public class Main {
     public static void main(String[] args) {
         HashMap<String,User> users = new HashMap<>();
         Queue<SupportTicket> tickets = new LinkedList<>();
-        ArrayList<NormalRide> normalRides = new ArrayList<>();
-        ArrayList<NormalRide> normalRidesTaken = new ArrayList<>();
-        ArrayList<PremiumRide> premiumRides = new ArrayList<>();
-        ArrayList<PremiumRide> premiumRidesTaken = new ArrayList<>();
-        ArrayList<Motorbike> motorbikes = new ArrayList<>();
-        ArrayList<Motorbike> motorbikesTaken = new ArrayList<>();
-        ArrayList<Bus> buses = new ArrayList<>();
-        ArrayList<Bus> busesFull = new ArrayList<>();
+        Vector<NormalRide> normalRides = new Vector<>();
+        Vector<NormalRide> normalRidesTaken = new Vector<>();
+        Vector<PremiumRide> premiumRides = new Vector<>();
+        Vector<PremiumRide> premiumRidesTaken = new Vector<>();
+        Vector<Motorbike> motorbikes = new Vector<>();
+        Vector<Motorbike> motorbikesTaken = new Vector<>();
+        Vector<Bus> buses = new Vector<>();
+        Vector<Bus> busesFull = new Vector<>();
         //Read From Files
         ReadFromFiles readFromFiles2 = new ReadFromFiles(users,normalRides,premiumRides,buses,motorbikes,
                 normalRidesTaken,premiumRidesTaken,busesFull,motorbikesTaken,tickets);
@@ -49,7 +49,7 @@ public class Main {
         //normalRides.add((NormalRide)rideFactory.createRide("Normal","Driver5",1.5f));
         //premiumRides.add((PremiumRide)rideFactory.createRide("Premium","premium",4.5f));
         //motorbikes.add((Motorbike)rideFactory.createRide("Motorbike","bike",3.5f) );
-        //buses.add((Bus)rideFactory.createRide("Bus","bus",3.3f) );
+        buses.add((Bus)rideFactory.createRide("Bus","bus32",3.2f) );
         //write into files
         //WriteInFiles writeInFiles1 = new WriteInFiles(tickets);
         //WriteInFiles writeInFiles2 = new WriteInFiles(normalRides);

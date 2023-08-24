@@ -1,24 +1,26 @@
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Queue;
+import java.util.Vector;
 
 public class WriteInFiles implements FileHandlingForUsersWrite, FileHandlingForSupportWrite{
 
-    public WriteInFiles(HashMap Users, ArrayList NormalRides,ArrayList PremiumRides,
-                        ArrayList BusRides,ArrayList MotorBikeRides, Queue Support,
-                        ArrayList NormalRidesTaken,ArrayList PremiumRidesTaken, ArrayList MotorBikeRidesTaken,ArrayList busesFull) {
-       this.write(Users);
-       this.write(Support);
-       this.WriteAllRides(NormalRides, PremiumRides, BusRides, MotorBikeRides, NormalRidesTaken, PremiumRidesTaken, MotorBikeRidesTaken,busesFull);
+    public WriteInFiles(HashMap users, Vector normalRides,Vector premiumRides,
+                        Vector busRides,Vector motorBikeRides, Queue support,
+                        Vector normalRidesTaken,Vector premiumRidesTaken, Vector motorBikeRidesTaken,Vector busesFull) {
+       this.write(users);
+       this.write(support);
+       this.WriteAllRides(normalRides, premiumRides, busRides, motorBikeRides, normalRidesTaken, premiumRidesTaken,
+               motorBikeRidesTaken,busesFull);
     }
 
     @Override
     public void write(HashMap Users) {
         UserFile.getInstance().write(Users);
     }
-    public void WriteAllRides(ArrayList normalRides, ArrayList premiumRides, ArrayList busRides, ArrayList motorBikeRides,
-                              ArrayList NormalRidesTaken,ArrayList PremiumRidesTaken,
-                              ArrayList MotorBikeRidesTaken,ArrayList busesFull){
+    public void WriteAllRides(Vector normalRides, Vector premiumRides, Vector busRides, Vector motorBikeRides,
+                              Vector NormalRidesTaken, Vector PremiumRidesTaken,
+                              Vector MotorBikeRidesTaken, Vector busesFull){
         NormalRidesFile.getInstance().write(normalRides);
         PremiumRidesFile.getInstance().write(premiumRides);
         BusRidesFile.getInstance().write(busRides);

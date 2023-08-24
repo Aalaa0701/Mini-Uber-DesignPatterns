@@ -1,6 +1,6 @@
-import java.util.ArrayList;
+import java.util.Vector;
 
 public interface FileHandlingForRidesRead {
-    void readRides(ArrayList rides);
+    void readRides(Vector rides);
 
 }
