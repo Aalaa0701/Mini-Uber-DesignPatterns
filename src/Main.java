@@ -19,17 +19,16 @@ public class Main {
             System.out.println(item.getCustomerName()+" "+item.getAgentName()+" "+item.getTicketContent());
         }
         for(int i =0;i<normalRides.size();i++){
-            System.out.println(normalRides.get(i).getDriver().getDriverName()+" "+normalRides.get(i).getDriver().driverRate);
+            System.out.println(normalRides.get(i).getDriverName()+" "+normalRides.get(i).getDriverRate());
         }
         for(int i =0;i<premiumRides.size();i++){
-            System.out.println(premiumRides.get(i).getDriver().getDriverName()+" "+premiumRides.get(i).getDriver().driverRate);
+            System.out.println(premiumRides.get(i).getDriverName()+" "+premiumRides.get(i).getDriverRate());
         }
         for(int i =0;i<motorbikes.size();i++){
-            System.out.println(motorbikes.get(i).getDriver().getDriverName()+" "+motorbikes.get(i).getDriver().driverRate);
+            System.out.println(motorbikes.get(i).getDriverName()+" "+motorbikes.get(i).getDriverRate());
         }
         for(int i =0;i<buses.size();i++){
-            System.out.println(buses.get(i).getDriver().getDriverName()+" "+buses.get(i).getDriver().driverRate+" "
-            +buses.get(i).getPassengerCount());
+            System.out.println(buses.get(i).getDriverName()+" "+buses.get(i).getDriverRate()+" "+buses.get(i).getPassengerCount());
         }
         //Check if reading is successful
         for (HashMap.Entry<String, User> set :

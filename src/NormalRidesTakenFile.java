@@ -20,7 +20,8 @@ public class NormalRidesTakenFile implements FileHandlingForRidesWrite, FileHand
             PrintWriter normalRidesTakenWriter = new PrintWriter(new FileWriter(normalRidesTakenTxtFile));
             for(int i =0;i<rides.size();i++){
                 NormalRide temp = (NormalRide)rides.get(i);
-                String line = temp.getDriver().getDriverName()+" "+temp.getDriver().getDriverRate();
+                //String line = temp.getDriver().getDriverName()+" "+temp.getDriver().getDriverRate();
+                String line = temp.getDriverName()+" "+temp.getDriverRate();
                 normalRidesTakenWriter.println(line);
             }
 

@@ -2,6 +2,13 @@ public class DriverInfo {
     String driverName;
     float driverRate;
 
+    public DriverInfo() {
+    }
+
+    public DriverInfo(String driverName, float driverRate) {
+        this.driverName = driverName;
+        this.driverRate = driverRate;
+    }
 
     public String getDriverName() {
         return driverName;

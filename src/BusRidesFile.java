@@ -17,7 +17,7 @@ public class BusRidesFile implements FileHandlingForRidesRead, FileHandlingForRi
             PrintWriter busRidesWriter = new PrintWriter(new FileWriter(busRidesTxtFile));
             for(int i =0;i<rides.size();i++){
                 Bus temp = (Bus)rides.get(i);
-                String line = temp.getDriver().getDriverName()+" "+temp.getDriver().getDriverRate()+" "+temp.getPassengerCount();
+                String line = temp.getDriverName()+" "+temp.getDriverRate();
                 busRidesWriter.println(line);
             }
 

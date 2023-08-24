@@ -1,17 +1,11 @@
-public class PremiumRide implements Ride{
+public class PremiumRide extends DriverInfo implements Ride{
     private final double BASE_FARE = 4.0;
     private final double RATE_PER_KM = 0.3;
     private final double PREMIUM_CHARGE = 2.0;
 
-    DriverInfo driver;
 
     public PremiumRide(String driverName, float driverRate) {
-        driver = new DriverInfo();
-        driver.setDriverName(driverName);
-        driver.setDriverRate(driverRate);
-    }
-    public DriverInfo getDriver() {
-        return driver;
+        super(driverName,driverRate);
     }
 
     public void requestRide() {

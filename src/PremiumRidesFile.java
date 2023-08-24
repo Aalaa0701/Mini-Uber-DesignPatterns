@@ -38,7 +38,7 @@ public class PremiumRidesFile implements FileHandlingForRidesRead, FileHandlingF
             PrintWriter premiumRidesWriter = new PrintWriter(new FileWriter(premiumRidesTxtFile));
             for(int i =0;i<rides.size();i++){
                 PremiumRide temp = (PremiumRide)rides.get(i);
-                String line = temp.getDriver().getDriverName()+" "+temp.getDriver().getDriverRate();
+                String line = temp.getDriverName()+" "+temp.getDriverRate();
                 premiumRidesWriter.println(line);
             }
 
