@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1ae26b83-2702-456e-9127-343c58332cc0" name="Changes" comment="updated DriverInfo class">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BusRides.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/BusRides.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BusRidesFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BusRidesFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BusRidesFullFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BusRidesFullFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FileHandlingForRidesRead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileHandlingForRidesRead.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FileHandlingForRidesWrite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileHandlingForRidesWrite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MotorBikeRidesFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MotorBikeRidesFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MotorBikesTakenFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MotorBikesTakenFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NormalRidesFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NormalRidesFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NormalRidesTakenFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NormalRidesTakenFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PremiumRidesFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PremiumRidesFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PremiumRidesTakenFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PremiumRidesTakenFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ReadFromFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReadFromFiles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WriteInFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WriteInFiles.java" afterDir="false" />
-    </list>
+    <list default="true" id="1ae26b83-2702-456e-9127-343c58332cc0" name="Changes" comment="Replaced ArrayList with Vectors" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -123,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692897771717</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Replaced ArrayList with Vectors">
+      <created>1692903324521</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1692903324521</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -147,7 +138,8 @@
     <MESSAGE value="implemented all file Functions" />
     <MESSAGE value="updated classes" />
     <MESSAGE value="updated DriverInfo class" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated DriverInfo class" />
+    <MESSAGE value="Replaced ArrayList with Vectors" />
+    <option name="LAST_COMMIT_MESSAGE" value="Replaced ArrayList with Vectors" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
