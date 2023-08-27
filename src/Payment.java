@@ -3,10 +3,10 @@ import java.util.Scanner;
 public class Payment {
     PaymentMethod paymentMethod;
 
-    public Payment(){
-        handlePayment();
-    }
-    void handlePayment(){
+    public Payment(){};
+
+
+    void handlePayment(int amount){
         while(true){
             System.out.println("Type V for Visa Or C for Cash");
             Scanner Input = new Scanner(System.in);
@@ -14,21 +14,21 @@ public class Payment {
             if(Reply == 'V' || Reply == 'v'){
                 Visa visaObject = new Visa();
                 paymentMethod = visaObject;
-                executePayment();
+                executePayment(amount);
                 break;
             }
             else if(Reply == 'C' || Reply == 'c') {
                 Cash cashObject = new Cash();
                 paymentMethod = cashObject;
-                executePayment();
+                executePayment(amount);
                 break;
             }
 
         }
     }
 
-    void executePayment(){
-        paymentMethod.Pay();
+    void executePayment(int amount){
+        paymentMethod.Pay(amount);
     }
 
 

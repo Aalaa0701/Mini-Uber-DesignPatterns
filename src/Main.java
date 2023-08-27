@@ -1,7 +1,8 @@
 public class Main {
     public static void main(String[] args) {
 
-      Payment PaymentObject = new Payment();
-        
+      Payment paymentObject = new Payment();
+      int amount = 500;
+      paymentObject.handlePayment(amount);
     }
 }
