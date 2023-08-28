@@ -1,12 +1,5 @@
 import java.util.ArrayList;
 
-
-
-
-
-
-
-// Ticket.java
 public class Ticket {
 
     protected String ticketType;
