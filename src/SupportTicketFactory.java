@@ -6,7 +6,7 @@ class SupportTicketFactory {
             return new PaymentTicket();
         } else if (ticketType.equals("Account ")) {
 
-            return new AccountTIcket();
+            return new AccountTicket();
         }
         else {
             return null;
