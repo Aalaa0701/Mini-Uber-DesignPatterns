@@ -1,19 +1,51 @@
-public class Bus implements Ride{
+import java.util.Scanner;
+import java.util.Vector;
+
+public class Bus extends rideInfo implements Ride{
     int passengerCount;
-    private final double BASE_FARE = 1.5;
-    private final double RATE_PER_KM = 0.1;
-    private final double PASSENGER_CHARGE = 0.5;
 
 
-
-    @Override
-   public void requestRide() {
-        // Implementation for requesting a normal ride
+    public Bus(String driverName, float rateOfDriver) {
+        super(driverName, rateOfDriver);
     }
 
     @Override
+   public void requestRide() {
+        //making rides
+        Vector<Bus> busesAvailable= new Vector<>();
+        Vector<Bus>busesUnavailable= new Vector<>();
+        busesAvailable.add((Bus) ride.createRide("Bus","Ahmed",3f));
+        busesAvailable.add((Bus) ride.createRide("Bus","Ali",3.5f));
+        busesAvailable.add((Bus) ride.createRide("Bus","Mohamed",2f));
+        busesAvailable.add((Bus) ride.createRide("Bus","Wael",4f));
+        busesAvailable.add((Bus) ride.createRide("Bus","Mostafa",4.9f));
+        busesAvailable.add((Bus) ride.createRide("Bus","Hany",2.5f));
+        busesAvailable.add((Bus) ride.createRide("Bus","Emad",5f));
+        busesAvailable.add((Bus) ride.createRide("Bus","Omar",2.9f));
+
+        //checking if the bus is fully booked and move the ride from available to unavailable
+        for(int i=0;i<busesAvailable.size();i++){
+            if(busesAvailable.get(i).passengerCount == getMaxCapacity()){
+                busesUnavailable.add(busesAvailable.elementAt(i));
+                busesAvailable.removeElementAt(i);
+            }
+        }
+        // view the available rides and asking the user to choose one of them
+        for (int i=0;i<busesAvailable.size();i++){
+            System.out.println(i+1 + " Name: " + busesAvailable.get(i).driverName + " Rate: " + busesAvailable.get(i).rateOfDriver);
+        }
+        Scanner scanner = new Scanner(System.in);
+        int numOfRide = scanner.nextInt();
+        busesAvailable.elementAt(numOfRide).passengerCount++;
+        System.out.println("Passenger boarded successfully.");
+    }
+
+
     public double calculateFare(double distance) {
+        double RATE_PER_KM = 0.1;
+        double BASE_FARE = 1.5;
         double fare = BASE_FARE + (RATE_PER_KM * distance);
+        double PASSENGER_CHARGE = 0.5;
         fare += (passengerCount * PASSENGER_CHARGE);
         return fare;
     }
@@ -24,15 +56,7 @@ public class Bus implements Ride{
         return 30;
     }
 
-    public void boardPassenger() {
-        if (passengerCount < getMaxCapacity()){
-            passengerCount++;
-            System.out.println("Passenger boarded. ");
-        }else
-        {
-            System.out.println("Unfortunately, the bus is full");
-        }
-    }
+
     public void exitPassenger(){
         if (passengerCount>0)
         {
@@ -41,8 +65,5 @@ public class Bus implements Ride{
         }else {
             System.out.println("No passenger on the bus.");
         }
-
-
-
     }
 }

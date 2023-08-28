@@ -1,5 +1,5 @@
 public interface Ride {
     void requestRide();
     double calculateFare(double distance);
-    // more methods
+    RideFactory ride=new RideFactory();
 }
