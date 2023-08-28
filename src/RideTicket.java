@@ -1,35 +1,30 @@
 import java.util.ArrayList;
+import java.util.Queue;
 import java.util.Scanner;
 class RideTicket extends Ticket implements Request_ticket {
-    private ArrayList<String> ride_Issues;
+    private Queue<RideTicket> rideTickets;
 
-    public RideTicket() {
-        super("Ride");
+    public RideTicket(){
+        super("ride");
     }
-    private Request_ticket requestTicket;
-
-    @Override
-    public void setNextChain(Request_ticket nextChain) {
-        this.requestTicket = nextChain;
+    public RideTicket(String ticketType, Queue<RideTicket> rideTickets) {
+        super(ticketType);
+        this.rideTickets = rideTickets;
     }
 
 
+    public void request() {
+        Scanner myObj = new Scanner(System.in);
+        System.out.println("Please Enter your username");
+        String username = myObj.nextLine();
+        System.out.println("Please Enter Your Ride issue ");
+        String issue = myObj.nextLine();
+        this.status = "Pending";
+        this.Issue = issue;
+        this.setTicketMaker(username);
 
-    public void request(Ticket ticketType) {
-        if(ticketType.getTicketType().equals("Ride")) {
-            Scanner myObj = new Scanner(System.in);
-            System.out.println("Please Enter Your Ride issue ");
-            String issue = myObj.nextLine();
-            this.status = "Pending";
-            this.Issue = issue;
-            ride_Issues.add(issue + " Status : " + this.status);
+        System.out.println("Thanks for contacting Service Support Your request is pending now ");
+        rideTickets.add(this);
 
-            System.out.println("Thanks for contacting Service Support Your request is pending now ");
-
-        }
-        else {
-            requestTicket.request(ticketType);
-
-        }
     }
 }

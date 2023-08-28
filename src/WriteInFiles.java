@@ -1,13 +1,13 @@
 import java.util.*;
 
-public class WriteInFiles implements FileHandlingForUsersWrite, FileHandlingForSupportWrite{
+public class WriteInFiles implements FileHandlingForUsersWrite{
 
 
     public WriteInFiles(Map users, Vector normalRides,Vector premiumRides,
-                        Vector busRides,Vector motorBikeRides, Queue support,
+                        Vector busRides,Vector motorBikeRides, Queue rideTickets, Queue paymentTickets,
                         Vector normalRidesTaken,Vector premiumRidesTaken, Vector motorBikeRidesTaken,Vector busesFull) {
        this.write(users);
-       this.write(support);
+       this.write(rideTickets, paymentTickets);
        this.WriteAllRides(normalRides, premiumRides, busRides, motorBikeRides, normalRidesTaken, premiumRidesTaken,
                motorBikeRidesTaken,busesFull);
     }
@@ -29,8 +29,9 @@ public class WriteInFiles implements FileHandlingForUsersWrite, FileHandlingForS
         BusRidesFullFile.getInstance().write(busesFull);
     }
 
-    @Override
-    public void write(Queue Support) {
-        SupportTicketsFile.getInstance().write(Support);
+
+    public void write(Queue rideTickets, Queue paymentTickets) {
+        RideTicketsFile.getInstance().write(rideTickets);
+        PaymentTicketsFile.getInstance().write(paymentTickets);
     }
 }

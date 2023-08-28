@@ -3,17 +3,15 @@ import java.util.ArrayList;
 public class Ticket {
 
     protected String ticketType;
+    protected String ticketMaker;
 
     protected String status;
-    protected String assignedAgent;
-
-
 
     protected String Issue;
+
     public Ticket(String ticketType) {
         this.ticketType = ticketType;
         this.status = "Open";
-        this.assignedAgent = null;
         this.Issue = null;
     }
     public String getIssue() {
@@ -26,9 +24,21 @@ public class Ticket {
     public String getStatus() {
         return status;
     }
-    public void assignTicketToAgent(String agent) {
-        this.assignedAgent = agent;  //setter
-        this.status = "In Progress";
+
+    public String getTicketMaker() {
+        return ticketMaker;
+    }
+
+    public void setTicketMaker(String ticketMaker) {
+        this.ticketMaker = ticketMaker;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public void setIssue(String issue) {
+        Issue = issue;
     }
 
     public void updateTicketStatus(String newStatus) {

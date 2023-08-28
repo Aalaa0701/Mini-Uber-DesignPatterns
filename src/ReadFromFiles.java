@@ -1,13 +1,13 @@
 import java.util.*;
 
-public class ReadFromFiles implements FileHandlingForUsersRead, FileHandlingForSupportRead {
+public class ReadFromFiles implements FileHandlingForUsersRead {
 
 
     public ReadFromFiles(Map<String, User> Users, Vector normalRides, Vector premiumRides, Vector busRides, Vector motorBikeRides,
                          Vector normalRidesTaken, Vector premiumRidesTaken, Vector busRidesFull,
-                         Vector motorBikesTaken, Queue Support) {
+                         Vector motorBikesTaken, Queue rideTickets, Queue paymentTickets) {
         this.readUsers(Users);
-        this.readSupport(Support);
+        this.readSupport(rideTickets, paymentTickets);
         this.ReadAllRides(normalRides, premiumRides, busRides, motorBikeRides,
                 normalRidesTaken,premiumRidesTaken,busRidesFull,motorBikesTaken);
     }
@@ -31,8 +31,10 @@ public class ReadFromFiles implements FileHandlingForUsersRead, FileHandlingForS
 
    }
 
-    @Override
-    public void readSupport(Queue Support) {
-        SupportTicketsFile.getInstance().readSupport(Support);
+
+    public void readSupport(Queue rideTickets, Queue paymentTickets) {
+        RideTicketsFile.getInstance().readSupport(rideTickets);
+        PaymentTicketsFile.getInstance().readSupport(paymentTickets);
+
     }
 }

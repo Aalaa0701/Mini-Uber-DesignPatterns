@@ -6,10 +6,10 @@ public class Register implements InputData, Validation{
 
     private User userInfo;
     private String confirmPassword;
+    boolean registrationSuccess = false;
 
     Map<String,User> userMap;
     public Register(Map userMap) {
-       // Login.users = new HashMap<>();
         userInfo = new User("", "");
         this.userMap = userMap;
     }
@@ -44,6 +44,11 @@ public class Register implements InputData, Validation{
         } else {
             userMap.put(username,userInfo);
             System.out.println("Registration successful!");
+            registrationSuccess = true;
         }
+    }
+
+    public boolean isRegistrationSuccess() {
+        return registrationSuccess;
     }
 }
