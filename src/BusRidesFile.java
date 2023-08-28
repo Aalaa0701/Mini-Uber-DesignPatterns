@@ -34,7 +34,6 @@ public class BusRidesFile implements FileHandlingForRidesRead, FileHandlingForRi
             Scanner busesScan = new Scanner(busesText);
             while(busesScan.hasNextLine()){
                 String info = busesScan.nextLine();
-                System.out.println(info);
                 String driverName;
                 float driverRate;
                 int passengerCount;

@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abcd2540-3cb0-433d-a850-fcf78f1cb3fb" name="Changes" comment="edited hashmap">
-      <change beforePath="$PROJECT_DIR$/src/Info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BusRidesFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BusRidesFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileHandlingForUsersRead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileHandlingForUsersRead.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileHandlingForUsersWrite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileHandlingForUsersWrite.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReadFromFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReadFromFiles.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Register.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Users.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WriteInFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WriteInFiles.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -5,19 +5,30 @@ import java.util.Scanner;
 public class Login implements InputData,  Validation{
     private String username;
     private String password;
+    boolean userFound = false;
 
-    public static Map<String, User> users = new HashMap<>();
+    Map<String,User> users;
+
+   // public static Map<String, User> users = new HashMap<>();
+
+
+    public Login(Map<String, User> users) {
+        this.users = users;
+    }
 
     @Override
     public void Data() {
-        System.out.println(" Enter your username \n");
-        Scanner input = new Scanner(System.in);
-         username = input.nextLine();
+        do {
+            System.out.println(" Enter your username \n");
+            Scanner input = new Scanner(System.in);
+            username = input.nextLine();
 
-        System.out.print(" Enter your password \n");
-        password = input.nextLine();
+            System.out.print(" Enter your password \n");
+            password = input.nextLine();
 
-        validData();
+            validData();
+        }while(!userFound);
+
     }
 
     @Override
@@ -28,6 +39,7 @@ public class Login implements InputData,  Validation{
             User userInfo = users.get(username);
             if (userInfo.getPassword().equals(password)) {
                 System.out.println("Login successful!");
+                userFound = true;
             } else {
                 System.out.println("Invalid password. Please try again.");
             }

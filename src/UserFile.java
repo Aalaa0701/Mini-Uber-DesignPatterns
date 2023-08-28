@@ -1,6 +1,5 @@
 import java.io.*;
 import java.util.*;
-import java.util.HashMap;
 
 
 public class UserFile implements FileHandlingForUsersRead, FileHandlingForUsersWrite {
@@ -13,7 +12,7 @@ public class UserFile implements FileHandlingForUsersRead, FileHandlingForUsersW
     }
 
     @Override
-    public void readUsers(HashMap Users) {
+    public void readUsers(Map<String, User> Users) {
         try{
             File usersFile = new File("src/Users.txt");
             Scanner usersScan = new Scanner(usersFile);
@@ -35,7 +34,7 @@ public class UserFile implements FileHandlingForUsersRead, FileHandlingForUsersW
     }
 
     @Override
-    public void write(HashMap Users) {
+    public void write(Map Users) {
         File usersFile = new File("src/Users.txt");
         try{
             PrintWriter usersWriter = new PrintWriter(new FileWriter(usersFile));

@@ -1,13 +1,17 @@
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class Register implements InputData, Validation{
 
     private User userInfo;
     private String confirmPassword;
-    public Register() {
-        Login.users = new HashMap<>();
+
+    Map<String,User> userMap;
+    public Register(Map userMap) {
+       // Login.users = new HashMap<>();
         userInfo = new User("", "");
+        this.userMap = userMap;
     }
 
 
@@ -30,15 +34,15 @@ public class Register implements InputData, Validation{
 
     @Override
     public void validData() {
-        String username = userInfo.getUsername();
+        String username = userInfo.getUserName();
         String password = userInfo.getPassword();
 
         if (!password.equals(confirmPassword)) {
             System.out.println("Passwords do not match. Please try again.");
-        } else if (Login.users.containsKey(username)) {
+        } else if (userMap.containsKey(username)) {
             System.out.println("Username already exists. Please choose a different username.");
         } else {
-            Login.users.put(username, userInfo);
+            userMap.put(username,userInfo);
             System.out.println("Registration successful!");
         }
     }

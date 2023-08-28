@@ -1,14 +1,11 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Queue;
-import java.util.Vector;
+import java.util.*;
 
 public class ReadFromFiles implements FileHandlingForUsersRead, FileHandlingForSupportRead {
 
 
-    public ReadFromFiles(HashMap Users, Vector normalRides, Vector premiumRides, Vector busRides, Vector motorBikeRides,
+    public ReadFromFiles(Map<String, User> Users, Vector normalRides, Vector premiumRides, Vector busRides, Vector motorBikeRides,
                          Vector normalRidesTaken, Vector premiumRidesTaken, Vector busRidesFull,
-                         Vector motorBikesTaken,Queue Support) {
+                         Vector motorBikesTaken, Queue Support) {
         this.readUsers(Users);
         this.readSupport(Support);
         this.ReadAllRides(normalRides, premiumRides, busRides, motorBikeRides,
@@ -16,7 +13,7 @@ public class ReadFromFiles implements FileHandlingForUsersRead, FileHandlingForS
     }
 
     @Override
-    public void readUsers(HashMap Users) {
+    public void readUsers(Map<String, User> Users) {
         UserFile.getInstance().readUsers(Users);
     }
 

@@ -1,9 +1,9 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Queue;
-import java.util.Vector;
+import java.util.*;
 
 public class WriteInFiles implements FileHandlingForUsersWrite, FileHandlingForSupportWrite{
+    public WriteInFiles(Map users){
+        this.write(users);
+    }
 
     public WriteInFiles(HashMap users, Vector normalRides,Vector premiumRides,
                         Vector busRides,Vector motorBikeRides, Queue support,
@@ -15,7 +15,7 @@ public class WriteInFiles implements FileHandlingForUsersWrite, FileHandlingForS
     }
 
     @Override
-    public void write(HashMap Users) {
+    public void write(Map Users) {
         UserFile.getInstance().write(Users);
     }
     public void WriteAllRides(Vector normalRides, Vector premiumRides, Vector busRides, Vector motorBikeRides,

@@ -1,5 +1,5 @@
-import java.util.HashMap;
+import java.util.Map;
 
 public interface FileHandlingForUsersRead {
-    void readUsers(HashMap Users);
+    void readUsers(Map<String, User> Users);
 }

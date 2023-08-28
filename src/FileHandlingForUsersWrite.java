@@ -1,5 +1,6 @@
 import java.util.HashMap;
+import java.util.Map;
 
 public interface FileHandlingForUsersWrite {
-    void write(HashMap Users);
+    void write(Map Users);
 }
