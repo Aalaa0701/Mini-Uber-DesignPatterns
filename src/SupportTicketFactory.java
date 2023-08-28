@@ -4,7 +4,7 @@ class SupportTicketFactory {
             return new RideTicket();
         } else if (ticketType.equals("payment")) {
             return new PaymentTicket();
-        } else if (ticketType.equals("Account ")) {
+        } else if (ticketType.equals("Account")) {
 
             return new AccountTicket();
         }

@@ -7,7 +7,12 @@ int operationNumber;
     // Map<String, String> map = new HashMap<>();
     HashMap<String, User> usersMap;
     //private ArrayList<String> Account_Issues;
+    private Request_ticket requestTicket;
 
+    @Override
+    public void setNextChain(Request_ticket nextChain) {
+        this.requestTicket=nextChain;
+    }
 
     public AccountTicket() {
         super("Account");
@@ -17,22 +22,30 @@ int operationNumber;
         super("Account");
         this.usersMap=map;
     }
-    public void request(){
-        System.out.println("Forget Password click 1 ");
-        System.out.println("Account Hacked click 2 (change Password)");
 
-        Scanner myObj = new Scanner(System.in);
-        operationNumber = myObj.nextInt();
-        if(operationNumber  == 1){
-            executeOperation1();
+    @Override
+    public void request(Ticket ticketType) {
+        if((ticketType.getTicketType().equals("Account"))){
+            System.out.println("Forget Password click 1 ");
+            System.out.println("Account Hacked click 2 (change Password)");
+
+            Scanner myObj = new Scanner(System.in);
+            operationNumber = myObj.nextInt();
+            if(operationNumber  == 1){
+                executeOperation1();
+            }
+
+            else if(operationNumber == 2){
+                executeOperation2();
+            }
         }
-
-        else if(operationNumber == 2){
-            executeOperation2();
-            // hyd5l input be el new password
+        else{
+            System.out.println("Only works for Ride , Payment and Account");
         }
 
     }
+
+
     void executeOperation1(){
         System.out.println(" Please Enter Your number :  ");
         Scanner operation1Input = new Scanner(System.in);

@@ -3,6 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="1ae26b83-2702-456e-9127-343c58332cc0" name="Changes" comment="edited hashmap">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AccountTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AccountTicket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PaymentTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PaymentTicket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Request_ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Request_ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RideTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RideTicket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SupportTicketFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SupportTicketFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
