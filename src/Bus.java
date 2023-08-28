@@ -36,7 +36,7 @@ public class Bus extends rideInfo implements Ride{
         }
         Scanner scanner = new Scanner(System.in);
         int numOfRide = scanner.nextInt();
-        busesAvailable.elementAt(numOfRide).passengerCount++;
+        busesAvailable.elementAt(numOfRide-1).passengerCount++;
         System.out.println("Passenger boarded successfully.");
     }
 
