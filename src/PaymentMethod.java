@@ -1,3 +1,3 @@
 public interface PaymentMethod {
-    void Pay(int amount);
+    void Pay(double amount);
 }
