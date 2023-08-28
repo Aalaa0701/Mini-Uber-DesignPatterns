@@ -1,19 +1,31 @@
 import java.util.Scanner;
 import java.util.Vector;
 
-public class Bus extends rideInfo implements Ride{
+public class Bus extends RideInfo implements Ride{
     int passengerCount;
-
+    Vector<Bus> busesAvailable;
+    Vector<Bus>busesUnavailable;
 
     public Bus(String driverName, float rateOfDriver) {
         super(driverName, rateOfDriver);
+    }
+    public Bus(Vector busesAvailable, Vector busesUnavailable){
+        this.busesAvailable=busesAvailable;
+        this.busesUnavailable=busesUnavailable;
+    }
+
+    public void setPassengerCount(int passengerCount) {
+        this.passengerCount = passengerCount;
+    }
+
+    public int getPassengerCount() {
+        return passengerCount;
     }
 
     @Override
    public void requestRide() {
         //making rides
-        Vector<Bus> busesAvailable= new Vector<>();
-        Vector<Bus>busesUnavailable= new Vector<>();
+
         busesAvailable.add((Bus) ride.createRide("Bus","Ahmed",3f));
         busesAvailable.add((Bus) ride.createRide("Bus","Ali",3.5f));
         busesAvailable.add((Bus) ride.createRide("Bus","Mohamed",2f));

@@ -1,7 +1,15 @@
 import java.util.Scanner;
 import java.util.Vector;
 
-public class PremiumRide extends rideInfo implements Ride{
+public class PremiumRide extends RideInfo implements Ride{
+
+    Vector<PremiumRide> premiumRidesAvailable;
+    Vector<PremiumRide> premiumRidesUnavailable;
+
+    public PremiumRide(Vector<PremiumRide> premiumRidesAvailable, Vector<PremiumRide> premiumRidesUnavailable) {
+        this.premiumRidesAvailable = premiumRidesAvailable;
+        this.premiumRidesUnavailable = premiumRidesUnavailable;
+    }
 
     public PremiumRide(String driverName, float rateOfDriver) {
         super(driverName, rateOfDriver);
@@ -9,8 +17,7 @@ public class PremiumRide extends rideInfo implements Ride{
 
     public void requestRide() {
         //making rides
-        Vector<PremiumRide> premiumRidesAvailable= new Vector<>();
-        Vector<PremiumRide> premiumRidesUnavailable= new Vector<>();
+
         premiumRidesAvailable.add((PremiumRide) ride.createRide("Premium","Ahmed",3f));
         premiumRidesAvailable.add((PremiumRide) ride.createRide("Premium","Ali",3.5f));
         premiumRidesAvailable.add((PremiumRide) ride.createRide("Premium","Mohamed",2f));

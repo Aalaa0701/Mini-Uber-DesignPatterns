@@ -20,10 +20,13 @@ public class MotorBikeRidesFile implements FileHandlingForRidesRead, FileHandlin
                 String driverName;
                 float driverRate;
                 String[] line = info.split(" ");
-                driverName = line[0];
-                driverRate = Float.parseFloat(line[1]);
-                Motorbike temp = new Motorbike(driverName,driverRate);
-                rides.add(temp);
+                if(line.length>1){
+                    driverName = line[0];
+                    driverRate = Float.parseFloat(line[1]);
+                    Motorbike temp = new Motorbike(driverName,driverRate);
+                    rides.add(temp);
+                }
+
             }
             motorBikesScan.close();
         }catch (FileNotFoundException e){
@@ -38,7 +41,7 @@ public class MotorBikeRidesFile implements FileHandlingForRidesRead, FileHandlin
             PrintWriter bikeRidesWriter = new PrintWriter(new FileWriter(bikeRidesTxtFile));
             for(int i =0;i<rides.size();i++){
                 Motorbike temp = (Motorbike)rides.get(i);
-                String line = temp.getDriverName()+" "+temp.getDriverRate();
+                String line = temp.getDriverName()+" "+temp.getRateOfDriver();
                 bikeRidesWriter.println(line);
             }
 

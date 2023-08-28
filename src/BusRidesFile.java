@@ -17,7 +17,7 @@ public class BusRidesFile implements FileHandlingForRidesRead, FileHandlingForRi
             PrintWriter busRidesWriter = new PrintWriter(new FileWriter(busRidesTxtFile));
             for(int i =0;i<rides.size();i++){
                 Bus temp = (Bus)rides.get(i);
-                String line = temp.getDriverName()+" "+temp.getDriverRate()+" "+temp.getPassengerCount();
+                String line = temp.getDriverName()+" "+temp.getRateOfDriver()+" "+temp.getPassengerCount();
                 busRidesWriter.println(line);
             }
 
@@ -38,12 +38,15 @@ public class BusRidesFile implements FileHandlingForRidesRead, FileHandlingForRi
                 float driverRate;
                 int passengerCount;
                 String[] line = info.split(" ");
-                driverName = line[0];
-                driverRate = Float.parseFloat(line[1]);
-                passengerCount = Integer.parseInt(line[2]);
-                Bus temp = new Bus(driverName,driverRate);
-                temp.setPassengerCount(passengerCount);
-                rides.add(temp);
+                if(line.length>1){
+                    driverName = line[0];
+                    driverRate = Float.parseFloat(line[1]);
+                    passengerCount = Integer.parseInt(line[2]);
+                    Bus temp = new Bus(driverName,driverRate);
+                    temp.setPassengerCount(passengerCount);
+                    rides.add(temp);
+                }
+
             }
             busesScan.close();
         }catch (FileNotFoundException e){

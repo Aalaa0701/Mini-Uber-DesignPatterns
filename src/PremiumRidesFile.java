@@ -20,10 +20,13 @@ public class PremiumRidesFile implements FileHandlingForRidesRead, FileHandlingF
                 String driverName;
                 float driverRate;
                 String[] line = info.split(" ");
-                driverName = line[0];
-                driverRate = Float.parseFloat(line[1]);
-                PremiumRide temp = new PremiumRide(driverName,driverRate);
-                rides.add(temp);
+                if(line.length>1){
+                    driverName = line[0];
+                    driverRate = Float.parseFloat(line[1]);
+                    PremiumRide temp = new PremiumRide(driverName,driverRate);
+                    rides.add(temp);
+                }
+
             }
             premiumRidesScan.close();
         }catch (FileNotFoundException e){
@@ -38,7 +41,7 @@ public class PremiumRidesFile implements FileHandlingForRidesRead, FileHandlingF
             PrintWriter premiumRidesWriter = new PrintWriter(new FileWriter(premiumRidesTxtFile));
             for(int i =0;i<rides.size();i++){
                 PremiumRide temp = (PremiumRide)rides.get(i);
-                String line = temp.getDriverName()+" "+temp.getDriverRate();
+                String line = temp.getDriverName()+" "+temp.getRateOfDriver();
                 premiumRidesWriter.println(line);
             }
 

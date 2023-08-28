@@ -20,7 +20,7 @@ public class PremiumRidesTakenFile implements FileHandlingForRidesWrite, FileHan
             PrintWriter premiumRidesTakenWriter = new PrintWriter(new FileWriter(premiumRidesTakenTxtFile));
             for(int i =0;i<rides.size();i++){
                 PremiumRide temp = (PremiumRide)rides.get(i);
-                String line = temp.getDriverName()+" "+temp.getDriverRate();
+                String line = temp.getDriverName()+" "+temp.getRateOfDriver();
                 premiumRidesTakenWriter.println(line);
             }
 

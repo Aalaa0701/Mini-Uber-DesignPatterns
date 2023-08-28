@@ -1,11 +1,9 @@
 import java.util.*;
 
 public class WriteInFiles implements FileHandlingForUsersWrite, FileHandlingForSupportWrite{
-    public WriteInFiles(Map users){
-        this.write(users);
-    }
 
-    public WriteInFiles(HashMap users, Vector normalRides,Vector premiumRides,
+
+    public WriteInFiles(Map users, Vector normalRides,Vector premiumRides,
                         Vector busRides,Vector motorBikeRides, Queue support,
                         Vector normalRidesTaken,Vector premiumRidesTaken, Vector motorBikeRidesTaken,Vector busesFull) {
        this.write(users);

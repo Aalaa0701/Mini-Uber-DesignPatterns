@@ -1,7 +1,14 @@
 import java.util.Scanner;
 import java.util.Vector;
 
-public class NormalRide extends rideInfo implements Ride{
+public class NormalRide extends RideInfo implements Ride{
+    Vector<NormalRide> normalRidesAvailable;
+    Vector<NormalRide> normalRidesUnavailable;
+
+    public NormalRide(Vector<NormalRide> normalRidesAvailable, Vector<NormalRide> normalRidesUnavailable) {
+        this.normalRidesAvailable = normalRidesAvailable;
+        this.normalRidesUnavailable = normalRidesUnavailable;
+    }
 
     public NormalRide(String driverName, float rateOfDriver) {
         super(driverName, rateOfDriver);
@@ -10,8 +17,7 @@ public class NormalRide extends rideInfo implements Ride{
     public void requestRide() {
 
         //making rides
-        Vector<NormalRide> normalRidesAvailable= new Vector<>();
-        Vector<NormalRide> normalRidesUnavailable= new Vector<>();
+
         normalRidesAvailable.add((NormalRide)ride.createRide("Normal","Ahmed",3f));
         normalRidesAvailable.add((NormalRide)ride.createRide("Normal","Ali",3.5f));
         normalRidesAvailable.add((NormalRide)ride.createRide("Normal","Mohamed",2f));

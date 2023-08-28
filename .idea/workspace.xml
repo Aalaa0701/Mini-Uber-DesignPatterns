@@ -2,17 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abcd2540-3cb0-433d-a850-fcf78f1cb3fb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/rideInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Bus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BusRides.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/BusRides.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BusRidesFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BusRidesFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BusRidesFullFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BusRidesFullFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MotorBikeRides.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/MotorBikeRides.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MotorBikeRidesFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MotorBikeRidesFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MotorBikesTakenFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MotorBikesTakenFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Motorbike.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Motorbike.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/NormalRide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NormalRide.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NormalRides.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/NormalRides.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NormalRidesFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NormalRidesFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NormalRidesTakenFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NormalRidesTakenFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PremiumRide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PremiumRide.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ride.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ride.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RideFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RideFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PremiumRides.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/PremiumRides.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PremiumRidesFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PremiumRidesFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PremiumRidesTakenFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PremiumRidesTakenFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RideInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RideInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Users.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WriteInFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WriteInFiles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rideInfo.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +70,19 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="osc-HandsOn" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="osc-HandsOn" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="osc-HandsOn" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>

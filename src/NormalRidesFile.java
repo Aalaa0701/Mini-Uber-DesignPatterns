@@ -18,7 +18,7 @@ public class NormalRidesFile implements FileHandlingForRidesRead, FileHandlingFo
             for(int i =0;i<rides.size();i++){
                 NormalRide temp = (NormalRide)rides.get(i);
                 //String line = temp.getDriver().getDriverName()+" "+temp.getDriver().getDriverRate();
-                String line = temp.getDriverName()+" "+temp.getDriverRate();
+                String line = temp.getDriverName()+" "+temp.getRateOfDriver();
                 normalRidesWriter.println(line);
             }
 
@@ -38,10 +38,13 @@ public class NormalRidesFile implements FileHandlingForRidesRead, FileHandlingFo
                 String driverName;
                 float driverRate;
                 String[] line = info.split(" ");
-                driverName = line[0];
-                driverRate = Float.parseFloat(line[1]);
-                NormalRide temp = new NormalRide(driverName,driverRate);
-                rides.add(temp);
+                if(line.length>1){
+                    driverName = line[0];
+                    driverRate = Float.parseFloat(line[1]);
+                    NormalRide temp = new NormalRide(driverName,driverRate);
+                    rides.add(temp);
+                }
+
             }
             normalRidesScan.close();
         }catch (FileNotFoundException e){

@@ -21,7 +21,7 @@ public class NormalRidesTakenFile implements FileHandlingForRidesWrite, FileHand
             for(int i =0;i<rides.size();i++){
                 NormalRide temp = (NormalRide)rides.get(i);
                 //String line = temp.getDriver().getDriverName()+" "+temp.getDriver().getDriverRate();
-                String line = temp.getDriverName()+" "+temp.getDriverRate();
+                String line = temp.getDriverName()+" "+temp.getRateOfDriver();
                 normalRidesTakenWriter.println(line);
             }
 

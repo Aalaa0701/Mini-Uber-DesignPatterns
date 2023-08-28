@@ -1,2 +1,0 @@
-MotorBikeDriver 3.7
-bike 3.5

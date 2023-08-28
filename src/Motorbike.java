@@ -1,6 +1,13 @@
 import java.util.Scanner;
 import java.util.Vector;
-public class Motorbike extends rideInfo implements Ride{
+public class Motorbike extends RideInfo implements Ride{
+    Vector<Motorbike> motorbikesAvailable;
+    Vector<Motorbike> motorbikesUnavailable;
+
+    public Motorbike(Vector<Motorbike> motorbikesAvailable, Vector<Motorbike> motorbikesUnavailable) {
+        this.motorbikesAvailable = motorbikesAvailable;
+        this.motorbikesUnavailable = motorbikesUnavailable;
+    }
 
     public Motorbike(String driverName, float rateOfDriver) {
         super(driverName, rateOfDriver);
@@ -8,8 +15,7 @@ public class Motorbike extends rideInfo implements Ride{
 
     public void requestRide() {
         //making rides
-        Vector<Motorbike> motorbikesAvailable= new Vector<>();
-        Vector<Motorbike> motorbikesUnavailable= new Vector<>();
+
         motorbikesAvailable.add((Motorbike) ride.createRide("Motorbike","Ahmed",3f));
         motorbikesAvailable.add((Motorbike) ride.createRide("Motorbike","Ali",3.5f));
         motorbikesAvailable.add((Motorbike) ride.createRide("Motorbike","Mohamed",2f));
