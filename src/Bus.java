@@ -1,4 +1,4 @@
-public class Bus extends DriverInfo implements Ride{
+public class Bus extends RideInfo implements Ride{
     int passengerCount;
     private final double BASE_FARE = 1.5;
     private final double RATE_PER_KM = 0.1;

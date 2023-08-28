@@ -1,4 +1,4 @@
-public class Motorbike extends DriverInfo implements Ride{
+public class Motorbike extends RideInfo implements Ride{
     private final double BASE_FARE = 2.0;
     private final double RATE_PER_KM = 0.15;
 

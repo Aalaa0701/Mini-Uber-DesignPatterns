@@ -1,11 +1,11 @@
-public class DriverInfo {
+public class RideInfo {
     private String driverName;
     private float driverRate;
 
-    public DriverInfo() {
+    public RideInfo() {
     }
 
-    public DriverInfo(String driverName, float driverRate) {
+    public RideInfo(String driverName, float driverRate) {
         this.driverName = driverName;
         setDriverRate(driverRate);
     }

@@ -1,4 +1,4 @@
-public class PremiumRide extends DriverInfo implements Ride{
+public class PremiumRide extends RideInfo implements Ride{
     private final double BASE_FARE = 4.0;
     private final double RATE_PER_KM = 0.3;
     private final double PREMIUM_CHARGE = 2.0;
