@@ -59,6 +59,7 @@ public class Bus extends RideInfo implements Ride{
         double fare = BASE_FARE + (RATE_PER_KM * distance);
         double PASSENGER_CHARGE = 0.5;
         fare += (passengerCount * PASSENGER_CHARGE);
+        System.out.println("Your fare is "+fare +"$");
         return fare;
     }
 

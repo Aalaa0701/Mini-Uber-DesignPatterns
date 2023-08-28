@@ -41,10 +41,13 @@ public class NormalRidesTakenFile implements FileHandlingForRidesWrite, FileHand
                 String driverName;
                 float driverRate;
                 String[] line = info.split(" ");
-                driverName = line[0];
-                driverRate = Float.parseFloat(line[1]);
-                NormalRide temp = new NormalRide(driverName,driverRate);
-                rides.add(temp);
+                if(line.length>1){
+                    driverName = line[0];
+                    driverRate = Float.parseFloat(line[1]);
+                    NormalRide temp = new NormalRide(driverName,driverRate);
+                    rides.add(temp);
+                }
+
             }
             normalRidesTakenScan.close();
         }catch (FileNotFoundException e){

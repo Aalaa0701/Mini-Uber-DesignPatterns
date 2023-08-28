@@ -45,6 +45,8 @@ public class Motorbike extends RideInfo implements Ride{
     public double calculateFare(double distance) {
         double BASE_FARE = 2.0;
         double RATE_PER_KM = 0.15;
-        return BASE_FARE + (RATE_PER_KM * distance);
+        double fare = BASE_FARE + (RATE_PER_KM * distance);
+        System.out.println("Your fare is "+fare +"$");
+        return fare;
     }
 }

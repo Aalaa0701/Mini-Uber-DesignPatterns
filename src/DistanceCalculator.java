@@ -47,7 +47,6 @@ public class DistanceCalculator {
     }
     double getDistance(){
         double distance = distances.get(currentLocation).get(destination);
-        System.out.println(distance);
         return distance;
     }
 

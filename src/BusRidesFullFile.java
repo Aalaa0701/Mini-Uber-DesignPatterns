@@ -24,12 +24,15 @@ public class BusRidesFullFile implements FileHandlingForRidesRead, FileHandlingF
                 float driverRate;
                 int passengerCount;
                 String[] line = info.split(" ");
-                driverName = line[0];
-                driverRate = Float.parseFloat(line[1]);
-                passengerCount = Integer.parseInt(line[2]);
-                Bus temp = new Bus(driverName,driverRate);
-                temp.setPassengerCount(passengerCount);
-                rides.add(temp);
+                if(line.length>1){
+                    driverName = line[0];
+                    driverRate = Float.parseFloat(line[1]);
+                    passengerCount = Integer.parseInt(line[2]);
+                    Bus temp = new Bus(driverName,driverRate);
+                    temp.setPassengerCount(passengerCount);
+                    rides.add(temp);
+                }
+
             }
             busesFullScan.close();
         }catch (FileNotFoundException e){

@@ -3,6 +3,8 @@ import java.util.Scanner;
 public class RideInfo {
     String driverName;
     float rateOfDriver;
+    String currentLocation;
+    String destination;
 
     public RideInfo(){};
     public RideInfo(String driverName, float rateOfDriver) {
@@ -23,6 +25,7 @@ public class RideInfo {
             currentLocation = scanner.next();
             currentLocation=currentLocation.toLowerCase();
             if(currentLocation.equals("cairo") || currentLocation.equals("giza") || currentLocation.equals("alex") || currentLocation.equals("aswan")){
+                this.currentLocation = currentLocation;
                 break;
             }
             else{
@@ -44,6 +47,7 @@ public class RideInfo {
                 System.out.println("Sorry! you can't choose the same location please try again");
             }
             else if(destination.equals("cairo") || destination.equals("giza") || destination.equals("alex") || destination.equals("aswan")){
+                this.destination = destination;
                break;
             }
             else{
@@ -51,6 +55,14 @@ public class RideInfo {
             }
         }while (true);
 
+    }
+
+    public String getCurrentLocation() {
+        return currentLocation;
+    }
+
+    public String getDestination() {
+        return destination;
     }
 
     public String getDriverName() {

@@ -40,10 +40,13 @@ public class PremiumRidesTakenFile implements FileHandlingForRidesWrite, FileHan
                 String driverName;
                 float driverRate;
                 String[] line = info.split(" ");
-                driverName = line[0];
-                driverRate = Float.parseFloat(line[1]);
-                PremiumRide temp = new PremiumRide(driverName,driverRate);
-                rides.add(temp);
+                if(line.length>1){
+                    driverName = line[0];
+                    driverRate = Float.parseFloat(line[1]);
+                    PremiumRide temp = new PremiumRide(driverName,driverRate);
+                    rides.add(temp);
+                }
+
             }
             premiumRidesTakenScan.close();
         }catch (FileNotFoundException e){

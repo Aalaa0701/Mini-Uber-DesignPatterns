@@ -45,6 +45,8 @@ public class PremiumRide extends RideInfo implements Ride{
         double BASE_FARE = 4.0;
         double RATE_PER_KM = 0.3;
         double PREMIUM_CHARGE = 2.0;
-        return BASE_FARE + (RATE_PER_KM * distance) + PREMIUM_CHARGE;
+        double fare = BASE_FARE + (RATE_PER_KM * distance) + PREMIUM_CHARGE;
+        System.out.println("Your fare is "+fare +"$");
+        return fare;
     }
 }

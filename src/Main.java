@@ -45,6 +45,7 @@ public class Main {
 
        }
        if(loginOrRegistrationSuccess){
+           DistanceCalculator distanceCalculator = new DistanceCalculator();
            Motorbike motorbikeObj=new Motorbike(motorbikes,motorbikesTaken);
            NormalRide normalRideObj =new NormalRide(normalRides,normalRidesTaken);
            PremiumRide premiumRideObj=new PremiumRide(premiumRides,premiumRidesTaken);
@@ -58,19 +59,37 @@ public class Main {
                if (userChoice == 1) {
                    normalRideObj.requestRide();
                    normalRideObj.chooseLocation();
+                   distanceCalculator.setCurrentLocation(normalRideObj.getCurrentLocation());
+                   distanceCalculator.setDestination(normalRideObj.getDestination());
+                   normalRideObj.calculateFare(distanceCalculator.getDistance());
+
                } else if (userChoice == 2) {
                    premiumRideObj.requestRide();
                    premiumRideObj.chooseLocation();
+                   distanceCalculator.setCurrentLocation(premiumRideObj.getCurrentLocation());
+                   distanceCalculator.setDestination(premiumRideObj.getDestination());
+                   premiumRideObj.calculateFare(distanceCalculator.getDistance());
+
                } else if (userChoice == 3) {
                    motorbikeObj.requestRide();
                    motorbikeObj.chooseLocation();
+                   distanceCalculator.setCurrentLocation(motorbikeObj.getCurrentLocation());
+                   distanceCalculator.setDestination(motorbikeObj.getDestination());
+                   motorbikeObj.calculateFare(distanceCalculator.getDistance());
+
                } else if (userChoice == 4) {
                    busObj.requestRide();
                    busObj.chooseLocation();
+                   distanceCalculator.setCurrentLocation(busObj.getCurrentLocation());
+                   distanceCalculator.setDestination(busObj.getDestination());
+                   busObj.calculateFare(distanceCalculator.getDistance());
+
                } else {
                    System.out.println("Invalid choice plea5se try again!");
                }
            }while (userChoice > 4 || userChoice <1);
+
+
        }
 
         WriteInFiles writeInFiles = new WriteInFiles(users,normalRides,premiumRides,buses,motorbikes,

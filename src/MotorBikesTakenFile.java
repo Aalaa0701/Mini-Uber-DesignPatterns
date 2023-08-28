@@ -40,10 +40,13 @@ public class MotorBikesTakenFile implements FileHandlingForRidesWrite, FileHandl
                 String driverName;
                 float driverRate;
                 String[] line = info.split(" ");
-                driverName = line[0];
-                driverRate = Float.parseFloat(line[1]);
-                Motorbike temp = new Motorbike(driverName,driverRate);
-                rides.add(temp);
+                if(line.length>1){
+                    driverName = line[0];
+                    driverRate = Float.parseFloat(line[1]);
+                    Motorbike temp = new Motorbike(driverName,driverRate);
+                    rides.add(temp);
+                }
+
             }
             motorBikesTakenScan.close();
         }catch (FileNotFoundException e){
