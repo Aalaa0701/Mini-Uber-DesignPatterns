@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1ae26b83-2702-456e-9127-343c58332cc0" name="Changes" comment="edited hashmap">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AccountTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AccountTicket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PaymentTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PaymentTicket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Request_ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Request_ticket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RideTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RideTicket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SupportTicketFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SupportTicketFactory.java" afterDir="false" />
-    </list>
+    <list default="true" id="1ae26b83-2702-456e-9127-343c58332cc0" name="Changes" comment="update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,7 +48,21 @@
       <option name="project" value="LOCAL" />
       <updated>1693241616398</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="implemented chain DesignPattern">
+      <created>1693253429724</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1693253429724</updated>
+    </task>
+    <task id="LOCAL-00003" summary="update">
+      <created>1693253848905</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1693253848905</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -71,6 +78,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="edited hashmap" />
-    <option name="LAST_COMMIT_MESSAGE" value="edited hashmap" />
+    <MESSAGE value="implemented chain DesignPattern" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
 </project>
