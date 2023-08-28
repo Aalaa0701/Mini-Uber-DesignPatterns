@@ -6,7 +6,7 @@ public class Payment {
     public Payment(){};
 
 
-    void handlePayment(int amount){
+    void handlePayment(double amount){
         while(true){
             System.out.println("Type V for Visa Or C for Cash");
             Scanner Input = new Scanner(System.in);
@@ -27,7 +27,7 @@ public class Payment {
         }
     }
 
-    void executePayment(int amount){
+    void executePayment(double amount){
         paymentMethod.Pay(amount);
     }
 

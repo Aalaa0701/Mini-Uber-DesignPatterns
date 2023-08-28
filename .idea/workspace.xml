@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ae26b83-2702-456e-9127-343c58332cc0" name="Changes" comment="Payment constructor updated">
+    <list default="true" id="1ae26b83-2702-456e-9127-343c58332cc0" name="Changes" comment="int to double">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MotorBikeRides.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/MotorBikeRides.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MotorBikeRidesTaken.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/MotorBikeRidesTaken.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Motorbike.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Motorbike.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Payment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Visa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visa.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +77,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693141679530</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="int to double">
+      <created>1693251436810</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1693251436810</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -87,6 +100,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Payment constructor updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Payment constructor updated" />
+    <MESSAGE value="int to double" />
+    <option name="LAST_COMMIT_MESSAGE" value="int to double" />
   </component>
 </project>
