@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1ae26b83-2702-456e-9127-343c58332cc0" name="Changes" comment="updated request method in AccountTicket">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="abcd2540-3cb0-433d-a850-fcf78f1cb3fb" name="Changes" comment="edited hashmap">
+      <change beforePath="$PROJECT_DIR$/src/Info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Register.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -32,91 +26,18 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/projects/Mini-Uber-DesignPatterns&quot;
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1ae26b83-2702-456e-9127-343c58332cc0" name="Changes" comment="Updated Support Ticket Read" />
+      <changelist id="abcd2540-3cb0-433d-a850-fcf78f1cb3fb" name="Changes" comment="" />
       <created>1691868502337</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1691868502337</updated>
     </task>
-    <task id="LOCAL-00001" summary="AddedReadFromUserFileFeature">
-      <created>1692473551842</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1692473551842</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Used Singleton">
-      <created>1692535928795</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1692535928795</updated>
-    </task>
-    <task id="LOCAL-00003" summary="commit">
-      <created>1692561250916</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1692561250916</updated>
-    </task>
-    <task id="LOCAL-00004" summary="supportTicketRead">
-      <created>1692808969768</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1692808969768</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Updated Support Ticket Read">
-      <created>1692824342109</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1692824342109</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Added Rides">
-      <created>1692853358099</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1692853358099</updated>
-    </task>
-    <task id="LOCAL-00007" summary="implemented all file Functions">
-      <created>1692861941179</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1692861941179</updated>
-    </task>
-    <task id="LOCAL-00008" summary="updated classes">
-      <created>1692897671594</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1692897671594</updated>
-    </task>
-    <task id="LOCAL-00009" summary="updated DriverInfo class">
-      <created>1692897771717</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1692897771717</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Replaced ArrayList with Vectors">
-      <created>1692903324521</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1692903324521</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -129,32 +50,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="AddedReadFromUserFileFeature" />
-    <MESSAGE value="Used Singleton" />
-    <MESSAGE value="commit" />
-    <MESSAGE value="supportTicketRead" />
-    <MESSAGE value="Updated Support Ticket Read" />
-    <MESSAGE value="Added Rides" />
-    <MESSAGE value="implemented all file Functions" />
-    <MESSAGE value="updated classes" />
-    <MESSAGE value="updated DriverInfo class" />
-    <MESSAGE value="Replaced ArrayList with Vectors" />
-    <option name="LAST_COMMIT_MESSAGE" value="Replaced ArrayList with Vectors" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.util.NoSuchElementException" package="java.util" />
-          <option name="timeStamp" value="1" />
-        </breakpoint>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
-          <option name="timeStamp" value="2" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

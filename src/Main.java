@@ -1,4 +1,9 @@
+
 import java.util.*;
+
+import java.util.HashMap;
+import java.util.Map;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -34,6 +39,7 @@ public class Main {
         for (HashMap.Entry<String, User> set :
                 users.entrySet()) {
 
+
             // Printing all elements of a Map
             System.out.println(set.getKey() + " = "
                     + set.getValue().getPassword());
@@ -55,6 +61,7 @@ public class Main {
         //WriteInFiles writeInFiles2 = new WriteInFiles(normalRides);
         WriteInFiles writeInFiles3 = new WriteInFiles(users,normalRides,premiumRides,buses,motorbikes,tickets,
                 normalRidesTaken,premiumRidesTaken,motorbikesTaken,busesFull);
+
 
     }
 }
