@@ -1,22 +1,43 @@
-public class NormalRide extends RideInfo implements Ride{
-    private final double BASE_FARE = 2.0;
-    private final double RATE_PER_KM = 0.1;
+import java.util.Scanner;
+import java.util.Vector;
 
+public class NormalRide extends rideInfo implements Ride{
 
-
-
-    public NormalRide(String driverName, float driverRate) {
-        super(driverName,driverRate);
+    public NormalRide(String driverName, float rateOfDriver) {
+        super(driverName, rateOfDriver);
     }
 
     public void requestRide() {
 
-        // Implementation for requesting a normal ride
+        //making rides
+        Vector<NormalRide> normalRidesAvailable= new Vector<>();
+        Vector<NormalRide> normalRidesUnavailable= new Vector<>();
+        normalRidesAvailable.add((NormalRide)ride.createRide("Normal","Ahmed",3f));
+        normalRidesAvailable.add((NormalRide)ride.createRide("Normal","Ali",3.5f));
+        normalRidesAvailable.add((NormalRide)ride.createRide("Normal","Mohamed",2f));
+        normalRidesAvailable.add((NormalRide)ride.createRide("Normal","Wael",4f));
+        normalRidesAvailable.add((NormalRide)ride.createRide("Normal","Mostafa",4.9f));
+        normalRidesAvailable.add((NormalRide)ride.createRide("Normal","Hany",2.5f));
+        normalRidesAvailable.add((NormalRide)ride.createRide("Normal","Emad",5f));
+        normalRidesAvailable.add((NormalRide)ride.createRide("Normal","Omar",4.1f));
+
+        // view the available rides and asking the user to choose one of them
+        System.out.println("Choose one of available rides : ");
+        for (int i=0;i<normalRidesAvailable.size();i++){
+            System.out.println(i+1 + " Name: " + normalRidesAvailable.get(i).driverName + " Rate: " + normalRidesAvailable.get(i).rateOfDriver);
+        }
+        Scanner scanner = new Scanner(System.in);
+        int numOfRide = scanner.nextInt();
+
+        // move the chosen ride from available to unavailable
+        normalRidesUnavailable.add(normalRidesAvailable.elementAt(numOfRide-1));
+        normalRidesAvailable.removeElementAt(numOfRide-1);
     }
 
     public double calculateFare(double distance) {
+        double BASE_FARE = 2.0;
+        double RATE_PER_KM = 0.1;
         return BASE_FARE + (RATE_PER_KM * distance);
     }
-
 
 }
