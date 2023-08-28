@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1ae26b83-2702-456e-9127-343c58332cc0" name="Changes" comment="updated request method in AccountTicket">
-      <change beforePath="$PROJECT_DIR$/src/AccountTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AccountTicket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SupportTicketFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SupportTicketFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
+    <list default="true" id="1ae26b83-2702-456e-9127-343c58332cc0" name="Changes" comment="edited hashmap">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +43,14 @@
       <option name="presentableId" value="Default" />
       <updated>1691868502337</updated>
     </task>
+    <task id="LOCAL-00001" summary="edited hashmap">
+      <created>1693241616398</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1693241616398</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -57,5 +63,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="edited hashmap" />
+    <option name="LAST_COMMIT_MESSAGE" value="edited hashmap" />
   </component>
 </project>
