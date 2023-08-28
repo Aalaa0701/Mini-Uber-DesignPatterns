@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="abcd2540-3cb0-433d-a850-fcf78f1cb3fb" name="Changes" comment="set distances map">
+    <list default="true" id="1ae26b83-2702-456e-9127-343c58332cc0" name="Changes" comment="Payment constructor updated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BusRidesFullFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BusRidesFullFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BusRidesTaken.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/BusRidesTaken.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DistanceCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DistanceCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Motorbike.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Motorbike.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NormalRide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NormalRide.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PremiumRide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PremiumRide.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PremiumRides.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/PremiumRides.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PremiumRidesTaken.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/PremiumRidesTaken.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RideInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RideInfo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +15,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -33,42 +26,52 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2TthtUThmtjGk2amHIPUzf5ZCMT" />
+  <component name="ProjectId" id="2TgFwh9OkijMdUi69NUb43o0J5O" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="osc-HandsOn" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="osc-HandsOn" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="abcd2540-3cb0-433d-a850-fcf78f1cb3fb" name="Changes" comment="" />
-      <created>1691868502337</created>
+      <changelist id="1ae26b83-2702-456e-9127-343c58332cc0" name="Changes" comment="" />
+      <created>1691457060335</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1691868502337</updated>
+      <updated>1691457060335</updated>
     </task>
-    <task id="LOCAL-00001" summary="Added DistancesClass">
-      <created>1693231701769</created>
+    <task id="LOCAL-00001" summary="Payment constructor updated">
+      <created>1693141679530</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1693231701769</updated>
+      <updated>1693141679530</updated>
     </task>
-    <task id="LOCAL-00002" summary="set distances map">
-      <created>1693250343836</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1693250343836</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -83,8 +86,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added DistancesClass" />
-    <MESSAGE value="set distances map" />
-    <option name="LAST_COMMIT_MESSAGE" value="set distances map" />
+    <MESSAGE value="Payment constructor updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Payment constructor updated" />
   </component>
 </project>
