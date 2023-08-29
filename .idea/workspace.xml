@@ -1,26 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1ae26b83-2702-456e-9127-343c58332cc0" name="Changes" comment="update">
-      <change afterPath="$PROJECT_DIR$/src/PaymentTickets.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PaymentTicketsFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RideTickets.txt" afterDir="false" />
+    <list default="true" id="1ae26b83-2702-456e-9127-343c58332cc0" name="Changes" comment="merged support Tickets">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AccountTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AccountTicket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PaymentTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PaymentTicket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PremiumRides.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/PremiumRides.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PremiumRidesTaken.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/PremiumRidesTaken.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ReadFromFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReadFromFiles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Register.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Request_ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Request_ticket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RideTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RideTicket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SupportTicketFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SupportTicketFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SupportTickets.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/SupportTickets.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SupportTicketsFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RideTicketsFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ticket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Users.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WriteInFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WriteInFiles.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +37,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="abcd2540-3cb0-433d-a850-fcf78f1cb3fb" name="Changes" comment="" />
+      <changelist id="1ae26b83-2702-456e-9127-343c58332cc0" name="Changes" comment="merged support Tickets" />
       <created>1691868502337</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -82,7 +64,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693253848905</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="merged support Tickets">
+      <created>1693260564428</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1693260564428</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -100,6 +89,7 @@
     <MESSAGE value="edited hashmap" />
     <MESSAGE value="implemented chain DesignPattern" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="merged support Tickets" />
+    <option name="LAST_COMMIT_MESSAGE" value="merged support Tickets" />
   </component>
 </project>
