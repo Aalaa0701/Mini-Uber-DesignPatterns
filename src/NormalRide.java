@@ -18,14 +18,6 @@ public class NormalRide extends RideInfo implements Ride{
 
         //making rides
 
-        normalRidesAvailable.add((NormalRide)ride.createRide("Normal","Ahmed",3f));
-        normalRidesAvailable.add((NormalRide)ride.createRide("Normal","Ali",3.5f));
-        normalRidesAvailable.add((NormalRide)ride.createRide("Normal","Mohamed",2f));
-        normalRidesAvailable.add((NormalRide)ride.createRide("Normal","Wael",4f));
-        normalRidesAvailable.add((NormalRide)ride.createRide("Normal","Mostafa",4.9f));
-        normalRidesAvailable.add((NormalRide)ride.createRide("Normal","Hany",2.5f));
-        normalRidesAvailable.add((NormalRide)ride.createRide("Normal","Emad",5f));
-        normalRidesAvailable.add((NormalRide)ride.createRide("Normal","Omar",4.1f));
 
         // view the available rides and asking the user to choose one of them
         System.out.println("Choose one of available rides : ");

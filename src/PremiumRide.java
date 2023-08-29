@@ -18,14 +18,6 @@ public class PremiumRide extends RideInfo implements Ride{
     public void requestRide() {
         //making rides
 
-        premiumRidesAvailable.add((PremiumRide) ride.createRide("Premium","Ahmed",3f));
-        premiumRidesAvailable.add((PremiumRide) ride.createRide("Premium","Ali",3.5f));
-        premiumRidesAvailable.add((PremiumRide) ride.createRide("Premium","Mohamed",2f));
-        premiumRidesAvailable.add((PremiumRide) ride.createRide("Premium","Wael",4f));
-        premiumRidesAvailable.add((PremiumRide) ride.createRide("Premium","Mostafa",4.9f));
-        premiumRidesAvailable.add((PremiumRide) ride.createRide("Premium","Hany",2.5f));
-        premiumRidesAvailable.add((PremiumRide) ride.createRide("Premium","Emad",5f));
-        premiumRidesAvailable.add((PremiumRide) ride.createRide("Premium","Omar",2.9f));
 
         // view the available rides and asking the user to choose one of them
         System.out.println("Choose one of available rides : ");

@@ -12,6 +12,7 @@ public class Main {
         double fare = 0;
         Scanner input = new Scanner(System.in);
 
+
         //data structures
         Map<String, User> users = new HashMap<>();
         Queue<RideTicket> rideTickets = new LinkedList<>();
@@ -25,9 +26,15 @@ public class Main {
         Vector<Bus> buses = new Vector<>();
         Vector<Bus> busesFull = new Vector<>();
 
+
         //Read From Files
         ReadFromFiles readFromFiles2 = new ReadFromFiles(users,normalRides,premiumRides,buses,motorbikes,
                 normalRidesTaken,premiumRidesTaken,busesFull,motorbikesTaken,rideTickets,paymentTickets);
+
+        // manage Unavailable Rides
+        Timer timer = new Timer();
+        RideCompleted rideCompleted = new RideCompleted(normalRidesTaken,premiumRidesTaken,motorbikesTaken,busesFull,buses);
+        timer.schedule(rideCompleted, 1000, 200000);
 
         //system flow
        while (true){
@@ -132,7 +139,7 @@ public class Main {
                 rideTickets,paymentTickets,normalRidesTaken,premiumRidesTaken,motorbikesTaken,busesFull);
 
 
-
+        System.exit(0);
 
 
     }

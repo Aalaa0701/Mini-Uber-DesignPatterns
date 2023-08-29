@@ -26,14 +26,6 @@ public class Bus extends RideInfo implements Ride{
    public void requestRide() {
         //making rides
 
-        busesAvailable.add((Bus) ride.createRide("Bus","Ahmed",3f));
-        busesAvailable.add((Bus) ride.createRide("Bus","Ali",3.5f));
-        busesAvailable.add((Bus) ride.createRide("Bus","Mohamed",2f));
-        busesAvailable.add((Bus) ride.createRide("Bus","Wael",4f));
-        busesAvailable.add((Bus) ride.createRide("Bus","Mostafa",4.9f));
-        busesAvailable.add((Bus) ride.createRide("Bus","Hany",2.5f));
-        busesAvailable.add((Bus) ride.createRide("Bus","Emad",5f));
-        busesAvailable.add((Bus) ride.createRide("Bus","Omar",2.9f));
 
         //checking if the bus is fully booked and move the ride from available to unavailable
         for(int i=0;i<busesAvailable.size();i++){
@@ -76,7 +68,7 @@ public class Bus extends RideInfo implements Ride{
             passengerCount--;
             System.out.println("Passenger exited. Total passenger: " +passengerCount);
         }else {
-            System.out.println("No passenger on the bus.");
+           // System.out.println("No passenger on the bus.");
         }
     }
 }

@@ -16,14 +16,7 @@ public class Motorbike extends RideInfo implements Ride{
     public void requestRide() {
         //making rides
 
-        motorbikesAvailable.add((Motorbike) ride.createRide("Motorbike","Ahmed",3f));
-        motorbikesAvailable.add((Motorbike) ride.createRide("Motorbike","Ali",3.5f));
-        motorbikesAvailable.add((Motorbike) ride.createRide("Motorbike","Mohamed",2f));
-        motorbikesAvailable.add((Motorbike) ride.createRide("Motorbike","Wael",4f));
-        motorbikesAvailable.add((Motorbike) ride.createRide("Motorbike","Mostafa",4.9f));
-        motorbikesAvailable.add((Motorbike) ride.createRide("Motorbike","Hany",2.5f));
-        motorbikesAvailable.add((Motorbike) ride.createRide("Motorbike","Emad",5f));
-        motorbikesAvailable.add((Motorbike) ride.createRide("Motorbike","Omar",2.9f));
+
 
         // view the available rides and asking the user to choose one of them
         System.out.println("Choose one of available rides : ");
