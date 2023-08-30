@@ -66,9 +66,6 @@ public class Bus extends RideInfo implements Ride{
         if (passengerCount>0)
         {
             passengerCount--;
-            System.out.println("Passenger exited. Total passenger: " +passengerCount);
-        }else {
-           // System.out.println("No passenger on the bus.");
         }
     }
 }
