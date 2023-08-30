@@ -1,9 +1,4 @@
 public interface Subject {
-    public void register(Observer obj);
-    public void unregister(Observer obj);
-    public void notifyObservers();
-    public void setStatus(String status);
+    public void notifyObserver();
 
-    Object getStatus();
-    //public void getStatus(String status);
 }

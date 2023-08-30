@@ -3,45 +3,35 @@ import java.util.List;
 
 
 // Ticket.java
-public class Ticket implements Subject {
+public class Ticket {
 
     protected String ticketType;
-
+    protected String ticketMaker;
     protected String status;
-    protected String assignedAgent;
-
-
-
     protected String Issue;
-    private List<Observer> observers;
+
+
+
     public Ticket(String ticketType) {
         this.ticketType = ticketType;
         this.status = "Open";
-       // this.assignedAgent = null;
         this.Issue = null;
-        this.observers=new ArrayList<>();
     }
-// new Update
-    @Override
-    public void register(Observer obj) {
-        if(obj == null) throw new NullPointerException("Null Observer");
-        if(!observers.contains(obj)) observers.add(obj);
+
+
+    public void updateTicketStatus(String newStatus) {
+        this.status = newStatus;    //setter
+
     }
-    @Override
-    public void unregister(Observer obj) {
-        observers.remove(obj);
+
+    public String getTicketMaker() {
+        return ticketMaker;
     }
-    @Override
-    public void notifyObservers() {
-        for (Observer obj : observers) {
-            obj.update();
-        }
+
+    public void setTicketMaker(String ticketMaker) {
+        this.ticketMaker = ticketMaker;
     }
-    @Override
-    public void setStatus(String status) {
-        this.status = status;
-        notifyObservers();
-    }
+
     public void setIssue(String Issue){
 
         this.Issue= Issue;
@@ -56,6 +46,8 @@ public class Ticket implements Subject {
     public String getStatus() {
         return status;
     }
+
+
 
 
 
