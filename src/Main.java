@@ -39,7 +39,7 @@ public class Main {
 
         //system flow
        while (true){
-           System.out.println("press 1 for Register or 2 for login or 3 if you forgot your password or your account is hacked " +
+           System.out.println("Press 1 for Register\nPress 2 for login\nPress 3 if you forgot your password or your account got hacked" +
                    "or 4 if you are an agent");
            int choice = input.nextInt();
            if(choice == 1){
