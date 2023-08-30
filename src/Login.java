@@ -19,11 +19,11 @@ public class Login implements InputData,  Validation{
     @Override
     public void Data() {
         do {
-            System.out.println(" Enter your username \n");
+            System.out.print("Enter your username \n");
             Scanner input = new Scanner(System.in);
             username = input.nextLine();
 
-            System.out.print(" Enter your password \n");
+            System.out.print("Enter your password \n");
             password = input.nextLine();
 
             validData();
