@@ -5,29 +5,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Agent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Agent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BusRides.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/BusRides.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BusRidesFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BusRidesFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BusRidesFullFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BusRidesFullFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FileHandlingForRidesRead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileHandlingForRead.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FileHandlingForRidesWrite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileHandlingForWrite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FileHandlingForSupportRead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileHandlingForSupportRead.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FileHandlingForSupportWrite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileHandlingForSupportWrite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MotorBikeRidesFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MotorBikeRidesFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MotorBikesTakenFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MotorBikesTakenFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NormalRidesFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NormalRidesFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NormalRidesTakenFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NormalRidesTakenFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PaymentTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PaymentTicket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PaymentTicketsFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PaymentTicketsFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PremiumRidesFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PremiumRidesFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PremiumRidesTakenFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PremiumRidesTakenFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ReadFromFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReadFromFiles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Register.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RideTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RideTicket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RideTickets.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/RideTickets.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RideTicketsFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RideTicketsFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ticket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WriteInFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WriteInFiles.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,5 +88,31 @@
     <MESSAGE value="implemented chain DesignPattern" />
     <MESSAGE value="update" />
     <option name="LAST_COMMIT_MESSAGE" value="update" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/RideTicket.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/RideTicket.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/RideTicket.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/RideTicket.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

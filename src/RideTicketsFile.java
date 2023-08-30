@@ -40,7 +40,7 @@ public class RideTicketsFile implements FileHandlingForRead, FileHandlingForWrit
                 if (line.length > 2) {
                     username = line[0];
                     status = line[1];
-                    for(int i =1;i< line.length;i++){
+                    for(int i =2;i< line.length;i++){
                         ticketContent+=line[i];
                         if(i< line.length-1){
                             ticketContent+=" ";

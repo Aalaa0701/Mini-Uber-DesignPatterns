@@ -70,7 +70,6 @@ public class Main {
                    username = newScanner.nextLine();
                    System.out.print("Password: \n");
                    password = newScanner.nextLine();
-
                    if(username .equals("agent") && password.equals("myPassword")){
                        Agent agent = new Agent("agent",users,rideTickets,paymentTickets);
                        agent.viewTickets();
@@ -171,9 +170,6 @@ public class Main {
            Payment payment = new Payment();
            payment.handlePayment(fare);
 
-       }
-       for (int i =0;i<rideTickets.size();i++){
-           System.out.println(rideTickets.get(i).getIssue());
        }
 
         WriteInFiles writeInFiles = new WriteInFiles(users,normalRides,premiumRides,buses,motorbikes,
