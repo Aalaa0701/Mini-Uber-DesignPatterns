@@ -1,5 +1,6 @@
 import java.util.Queue;
+import java.util.Vector;
 
 public interface FileHandlingForSupportRead {
-    void readSupport(Queue Support);
+    void readSupport(Vector Support);
 }

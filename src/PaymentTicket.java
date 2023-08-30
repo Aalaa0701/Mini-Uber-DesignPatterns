@@ -1,8 +1,10 @@
 import java.util.ArrayList;
 import java.util.Queue;
 import java.util.Scanner;
+import java.util.Vector;
+
 class PaymentTicket extends Ticket implements Request_ticket {
-   Queue<PaymentTicket> paymentTickets;
+   Vector<PaymentTicket> paymentTickets;
 
 
 
@@ -11,7 +13,7 @@ class PaymentTicket extends Ticket implements Request_ticket {
 
     }
 
-    public PaymentTicket(String ticketType, Queue<PaymentTicket> paymentTickets) {
+        public PaymentTicket(String ticketType, Vector<PaymentTicket> paymentTickets) {
         super(ticketType);
         this.paymentTickets = paymentTickets;
     }

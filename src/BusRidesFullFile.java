@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.Scanner;
 import java.util.Vector;
 
-public class BusRidesFullFile implements FileHandlingForRidesRead, FileHandlingForRidesWrite{
+public class BusRidesFullFile implements FileHandlingForRead, FileHandlingForWrite {
     private static BusRidesFullFile instance;
     private BusRidesFullFile(){};
 
@@ -14,7 +14,7 @@ public class BusRidesFullFile implements FileHandlingForRidesRead, FileHandlingF
     }
 
     @Override
-    public void readRides(Vector rides) {
+    public void read(Vector rides) {
         try{
             File busesFullText = new File("src/BusRidesTaken.txt");
             Scanner busesFullScan = new Scanner(busesFullText);

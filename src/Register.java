@@ -51,4 +51,8 @@ public class Register implements InputData, Validation{
     public boolean isRegistrationSuccess() {
         return registrationSuccess;
     }
+
+    public User getUserInfo() {
+        return userInfo;
+    }
 }

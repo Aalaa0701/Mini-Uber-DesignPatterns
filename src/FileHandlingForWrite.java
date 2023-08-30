@@ -1,5 +1,5 @@
 import java.util.Vector;
 
-public interface FileHandlingForRidesWrite {
+public interface FileHandlingForWrite {
     void write(Vector rides);
 }

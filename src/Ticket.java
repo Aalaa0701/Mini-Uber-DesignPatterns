@@ -8,19 +8,18 @@ public class Ticket {
     protected String ticketType;
     protected String ticketMaker;
     protected String status;
-    protected String Issue;
+    protected String Issue = "";
 
 
 
     public Ticket(String ticketType) {
         this.ticketType = ticketType;
         this.status = "Open";
-        this.Issue = null;
     }
 
 
     public void updateTicketStatus(String newStatus) {
-        this.status = newStatus;    //setter
+        this.status = newStatus;
 
     }
 

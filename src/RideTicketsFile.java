@@ -1,8 +1,8 @@
 import java.io.*;
-import java.util.Queue;
 import java.util.Scanner;
+import java.util.Vector;
 
-public class RideTicketsFile implements FileHandlingForSupportRead, FileHandlingForSupportWrite {
+public class RideTicketsFile implements FileHandlingForRead, FileHandlingForWrite {
     private static RideTicketsFile instance = new RideTicketsFile();
     private RideTicketsFile(){};
 
@@ -11,14 +11,14 @@ public class RideTicketsFile implements FileHandlingForSupportRead, FileHandling
     }
 
     @Override
-    public void write(Queue Support) {
+    public void write(Vector support) {
         File ticketsFile = new File("src/RideTickets.txt");
         try{
             PrintWriter ticketsWriter = new PrintWriter(new FileWriter(ticketsFile));
-            while(!Support.isEmpty()){
-                String line ="";
-                RideTicket temp = (RideTicket)Support.poll();
-                line= temp.getTicketMaker()+" "+temp.getStatus()+" "+temp.getIssue();
+            for(int i =0;i<support.size();i++){
+                RideTicket temp = (RideTicket) support.get(i);
+                //String line = temp.getDriver().getDriverName()+" "+temp.getDriver().getDriverRate();
+                String line = temp.getTicketMaker()+" "+temp.getStatus()+" "+temp.getIssue();
                 ticketsWriter.println(line);
             }
 
@@ -30,7 +30,7 @@ public class RideTicketsFile implements FileHandlingForSupportRead, FileHandling
     }
 
     @Override
-    public void readSupport(Queue Support) {
+    public void read(Vector support) {
         try{
             File supportTicketsFile = new File("src/RideTickets.txt");
             Scanner ticketsScan = new Scanner(supportTicketsFile);
@@ -48,10 +48,10 @@ public class RideTicketsFile implements FileHandlingForSupportRead, FileHandling
                     }
                     RideTicket ticketTemp = new RideTicket();
                     ticketTemp.setTicketMaker(username);
-                    ticketTemp.setStatus(status);
+                    ticketTemp.updateTicketStatus(status);
                     ticketTemp.setIssue(ticketContent);
                     //Support.add(supportTicketTemp);
-                    Support.offer(ticketTemp);
+                    support.add(ticketTemp);
                 }
 
 
@@ -62,5 +62,4 @@ public class RideTicketsFile implements FileHandlingForSupportRead, FileHandling
         }
 
     }
-
 }

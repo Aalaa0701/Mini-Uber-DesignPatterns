@@ -47,4 +47,9 @@ public class Login implements InputData,  Validation{
             System.out.println("Invalid username. Please try again.");
         }
     }
+
+    public String getUsername() {
+        return username;
+    }
+
 }

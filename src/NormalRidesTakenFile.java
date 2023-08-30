@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.Scanner;
 import java.util.Vector;
 
-public class NormalRidesTakenFile implements FileHandlingForRidesWrite, FileHandlingForRidesRead {
+public class NormalRidesTakenFile implements FileHandlingForWrite, FileHandlingForRead {
     private static NormalRidesTakenFile instance;
     private NormalRidesTakenFile(){};
 
@@ -32,7 +32,7 @@ public class NormalRidesTakenFile implements FileHandlingForRidesWrite, FileHand
     }
 
     @Override
-    public void readRides(Vector rides) {
+    public void read(Vector rides) {
         try{
             File normalRidesTakenText = new File("src/NormalRidesTaken.txt");
             Scanner normalRidesTakenScan = new Scanner(normalRidesTakenText);

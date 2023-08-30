@@ -4,7 +4,7 @@ public class WriteInFiles implements FileHandlingForUsersWrite{
 
 
     public WriteInFiles(Map users, Vector normalRides,Vector premiumRides,
-                        Vector busRides,Vector motorBikeRides, Queue rideTickets, Queue paymentTickets,
+                        Vector busRides,Vector motorBikeRides, Vector rideTickets, Vector paymentTickets,
                         Vector normalRidesTaken,Vector premiumRidesTaken, Vector motorBikeRidesTaken,Vector busesFull) {
        this.write(users);
        this.write(rideTickets, paymentTickets);
@@ -30,7 +30,7 @@ public class WriteInFiles implements FileHandlingForUsersWrite{
     }
 
 
-    public void write(Queue rideTickets, Queue paymentTickets) {
+    public void write(Vector rideTickets, Vector paymentTickets) {
         RideTicketsFile.getInstance().write(rideTickets);
         PaymentTicketsFile.getInstance().write(paymentTickets);
     }

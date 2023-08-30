@@ -1,6 +1,6 @@
 import java.util.Vector;
 
-public class User {
+public class User implements Observer {
     String userName;
     String password;
     Vector<String> tickets;
@@ -11,16 +11,9 @@ public class User {
         tickets = new Vector<>();
     }
 
+
     public void updateTicketsForUser(String update){
         tickets.add(update);
-    }
-
-    public void notifyUser(){
-        if(tickets.size() > 0){
-            for(int i = 0;i<tickets.size();i++){
-                System.out.println(tickets.get(i));
-            }
-        }
     }
 
     public String getUserName() {
@@ -29,6 +22,15 @@ public class User {
 
     public String getPassword() {
         return password;
+    }
+
+    @Override
+    public void update() {
+        if(tickets.size() > 0){
+            for(int i = 0;i<tickets.size();i++){
+                System.out.println(tickets.get(i));
+            }
+        }
     }
 }
 

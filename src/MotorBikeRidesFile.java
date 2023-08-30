@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.Scanner;
 import java.util.Vector;
 
-public class MotorBikeRidesFile implements FileHandlingForRidesRead, FileHandlingForRidesWrite {
+public class MotorBikeRidesFile implements FileHandlingForRead, FileHandlingForWrite {
     private static MotorBikeRidesFile instance = new MotorBikeRidesFile();
     private MotorBikeRidesFile(){};
 
@@ -11,7 +11,7 @@ public class MotorBikeRidesFile implements FileHandlingForRidesRead, FileHandlin
     }
 
     @Override
-    public void readRides(Vector rides) {
+    public void read(Vector rides) {
         try{
             File motorBikesText = new File("src/MotorBikeRides.txt");
             Scanner motorBikesScan = new Scanner(motorBikesText);

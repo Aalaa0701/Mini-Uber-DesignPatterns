@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.Scanner;
 import java.util.Vector;
 
-public class PremiumRidesTakenFile implements FileHandlingForRidesWrite, FileHandlingForRidesRead{
+public class PremiumRidesTakenFile implements FileHandlingForWrite, FileHandlingForRead {
     private static PremiumRidesTakenFile instance;
     private PremiumRidesTakenFile(){};
 
@@ -31,7 +31,7 @@ public class PremiumRidesTakenFile implements FileHandlingForRidesWrite, FileHan
     }
 
     @Override
-    public void readRides(Vector rides) {
+    public void read(Vector rides) {
         try{
             File premiumRidesTakenText = new File("src/PremiumRidesTaken.txt");
             Scanner premiumRidesTakenScan = new Scanner(premiumRidesTakenText);

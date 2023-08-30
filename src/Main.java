@@ -11,12 +11,13 @@ public class Main {
         boolean requestRideSuccess = false;
         double fare = 0;
         Scanner input = new Scanner(System.in);
+        String userLogged = "";
 
 
         //data structures
         Map<String, User> users = new HashMap<>();
-        Queue<RideTicket> rideTickets = new LinkedList<>();
-        Queue<PaymentTicket> paymentTickets = new LinkedList<>();
+        Vector<RideTicket> rideTickets = new Vector<>();
+        Vector<PaymentTicket> paymentTickets = new Vector<>();
         Vector<NormalRide> normalRides = new Vector<>();
         Vector<NormalRide> normalRidesTaken = new Vector<>();
         Vector<PremiumRide> premiumRides = new Vector<>();
@@ -38,13 +39,15 @@ public class Main {
 
         //system flow
        while (true){
-           System.out.println("press 1 for Register or 2 for login or 3 if you forgot your password or your account is hacked");
+           System.out.println("press 1 for Register or 2 for login or 3 if you forgot your password or your account is hacked " +
+                   "or 4 if you are an agent");
            int choice = input.nextInt();
            if(choice == 1){
                Register register = new Register(users);
                register.Data();
                if(register.registrationSuccess){
                    loginOrRegistrationSuccess = true;
+                   userLogged = register.getUserInfo().getUserName();
                }
                break;
            }
@@ -52,16 +55,42 @@ public class Main {
                 Login login = new Login(users);
                 login.Data();
                loginOrRegistrationSuccess = true;
+               userLogged = login.getUsername();
                break;
            }
            else if(choice == 3){
                AccountTicket accountTicket = new AccountTicket(users);
                accountTicket.request();
            }
+           else if(choice == 4){
+               do {
+                   String username, password;
+                   Scanner newScanner = new Scanner(System.in);
+                   System.out.print("Username: \n");
+                   username = newScanner.nextLine();
+                   System.out.print("Password: \n");
+                   password = newScanner.nextLine();
+
+                   if(username .equals("agent") && password.equals("myPassword")){
+                       Agent agent = new Agent("agent",users,rideTickets,paymentTickets);
+                       agent.viewTickets();
+                       agent.acceptTicket();
+                       agent.notifyObserver();
+                       agent.closeTicket();
+                       break;
+                   }
+                   else{
+                       System.out.println("Not a valid username or password!");
+                   }
+
+               }while(true);
+
+           }
 
 
        }
        if(loginOrRegistrationSuccess){
+           users.get(userLogged).update();
            System.out.println("Press 1 for requesting a ride or 2 for opening a support ticket");
            int choice = input.nextInt();
            if(choice == 1){
@@ -117,22 +146,34 @@ public class Main {
 
            }
            else if(choice == 2){
-               System.out.println("press 1 for ride ticket or 2 for payment ticket");
-               int choiceForTicket = input.nextInt();
-               RideTicket rideTicket = new RideTicket("Ride",rideTickets);
-               PaymentTicket paymentTicket = new PaymentTicket("Payment",paymentTickets);
-               if(choiceForTicket == 1){
-                   rideTicket.request();
-               }
-               else if(choiceForTicket == 2){
-                   paymentTicket.request();
-               }
+               do {
+                   System.out.println("press 1 for ride ticket or 2 for payment ticket");
+                   int choiceForTicket = input.nextInt();
+                   if(choiceForTicket == 1){
+                       RideTicket rideTicket = new RideTicket("Ride",rideTickets);
+                       rideTicket.setTicketMaker(userLogged);
+                       rideTicket.request();
+                       break;
+                   }
+                   else if(choiceForTicket == 2){
+                       PaymentTicket paymentTicket = new PaymentTicket("Payment",paymentTickets);
+                       paymentTicket.setTicketMaker(userLogged);
+                       paymentTicket.request();
+                       break;
+                   }
+                   else{
+                       System.out.println("please enter a valid choice");
+                   }
+               }while(true);
            }
        }
        if(requestRideSuccess){
            Payment payment = new Payment();
            payment.handlePayment(fare);
 
+       }
+       for (int i =0;i<rideTickets.size();i++){
+           System.out.println(rideTickets.get(i).getIssue());
        }
 
         WriteInFiles writeInFiles = new WriteInFiles(users,normalRides,premiumRides,buses,motorbikes,

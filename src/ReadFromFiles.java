@@ -5,7 +5,7 @@ public class ReadFromFiles implements FileHandlingForUsersRead {
 
     public ReadFromFiles(Map<String, User> Users, Vector normalRides, Vector premiumRides, Vector busRides, Vector motorBikeRides,
                          Vector normalRidesTaken, Vector premiumRidesTaken, Vector busRidesFull,
-                         Vector motorBikesTaken, Queue rideTickets, Queue paymentTickets) {
+                         Vector motorBikesTaken, Vector rideTickets, Vector paymentTickets) {
         this.readUsers(Users);
         this.readSupport(rideTickets, paymentTickets);
         this.ReadAllRides(normalRides, premiumRides, busRides, motorBikeRides,
@@ -20,21 +20,21 @@ public class ReadFromFiles implements FileHandlingForUsersRead {
    public void ReadAllRides(Vector normalRides, Vector premiumRides, Vector busRides, Vector motorBikeRides,
                             Vector normalRidesTaken, Vector premiumRidesTaken, Vector busRidesFull,
                             Vector motorBikesTaken){
-        NormalRidesFile.getInstance().readRides(normalRides);
-        PremiumRidesFile.getInstance().readRides(premiumRides);
-        BusRidesFile.getInstance().readRides(busRides);
-        MotorBikeRidesFile.getInstance().readRides(motorBikeRides);
-        NormalRidesTakenFile.getInstance().readRides(normalRidesTaken);
-        PremiumRidesTakenFile.getInstance().readRides(premiumRidesTaken);
-        BusRidesFullFile.getInstance().readRides(busRidesFull);
-        MotorBikesTakenFile.getInstance().readRides(motorBikesTaken);
+        NormalRidesFile.getInstance().read(normalRides);
+        PremiumRidesFile.getInstance().read(premiumRides);
+        BusRidesFile.getInstance().read(busRides);
+        MotorBikeRidesFile.getInstance().read(motorBikeRides);
+        NormalRidesTakenFile.getInstance().read(normalRidesTaken);
+        PremiumRidesTakenFile.getInstance().read(premiumRidesTaken);
+        BusRidesFullFile.getInstance().read(busRidesFull);
+        MotorBikesTakenFile.getInstance().read(motorBikesTaken);
 
    }
 
 
-    public void readSupport(Queue rideTickets, Queue paymentTickets) {
-        RideTicketsFile.getInstance().readSupport(rideTickets);
-        PaymentTicketsFile.getInstance().readSupport(paymentTickets);
+    public void readSupport(Vector rideTickets, Vector paymentTickets) {
+        RideTicketsFile.getInstance().read(rideTickets);
+        PaymentTicketsFile.getInstance().read(paymentTickets);
 
     }
 }

@@ -65,10 +65,10 @@ public class Agent implements Subject{
     public void closeTicket() {
         chosenTicket.updateTicketStatus("Closed");
         System.out.println("Ticket Closed !");
-        if(chosenTicket.getTicketType() == "Ride"){
+        if(chosenTicket.getTicketType().equals("Ride")){
             rideTickets.remove((RideTicket) chosenTicket);
         }
-        else if(chosenTicket.getTicketType() == "Payment"){
+        else if(chosenTicket.getTicketType() .equals("Payment")){
             paymentTickets.remove((PaymentTicket) chosenTicket);
         }
 
