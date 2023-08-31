@@ -39,8 +39,8 @@ public class Main {
 
         //system flow
        while (true){
-           System.out.println("press 1 for Register or 2 for login or 3 if you forgot your password or your account is hacked " +
-                   "or 4 if you are an agent");
+           System.out.println("Press 1 for Register \n Press 2 for login \n Press 3 if you forgot your password or your account got hacked" +
+                   "\n 4 if you are an agent");
            int choice = input.nextInt();
            if(choice == 1){
                Register register = new Register(users);
@@ -90,7 +90,7 @@ public class Main {
        }
        if(loginOrRegistrationSuccess){
            users.get(userLogged).update();
-           System.out.println("Press 1 for requesting a ride or 2 for opening a support ticket");
+           System.out.println("Press 1 for requesting a ride \n 2 for opening a support ticket");
            int choice = input.nextInt();
            if(choice == 1){
                DistanceCalculator distanceCalculator = new DistanceCalculator();
@@ -101,7 +101,7 @@ public class Main {
 
                int userChoice;
                do {
-                   System.out.println("Choose 1 for Normal ride or 2 for Premium ride or 3 for motor bike ride or 4 for bus ride :");
+                   System.out.println("Choose 1 for Normal ride \n 2 for Premium ride \n 3 for motor bike ride \n 4 for bus ride :");
                    userChoice = input.nextInt();
 
                    if (userChoice == 1) {
@@ -146,7 +146,7 @@ public class Main {
            }
            else if(choice == 2){
                do {
-                   System.out.println("press 1 for ride ticket or 2 for payment ticket");
+                   System.out.println("press 1 for ride ticket \n 2 for payment ticket");
                    int choiceForTicket = input.nextInt();
                    if(choiceForTicket == 1){
                        RideTicket rideTicket = new RideTicket("Ride",rideTickets);
