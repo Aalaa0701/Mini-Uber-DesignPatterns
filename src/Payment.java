@@ -28,7 +28,7 @@ public class Payment {
     }
 
     void executePayment(double amount){
-        paymentMethod.Pay(amount);
+        paymentMethod.pay(amount);
     }
 
 

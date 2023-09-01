@@ -17,7 +17,7 @@ public class Login implements InputData,  Validation{
     }
 
     @Override
-    public void Data() {
+    public void data() {
         do {
             System.out.print("Enter your username \n");
             Scanner input = new Scanner(System.in);
@@ -33,8 +33,6 @@ public class Login implements InputData,  Validation{
 
     @Override
     public void validData() {
-        User info = new User("BasmalaNaeem", "1234");
-        users.put("BasmalaNaeem", info);
         if (users.containsKey(username)) {
             User userInfo = users.get(username);
             if (userInfo.getPassword().equals(password)) {

@@ -68,7 +68,7 @@ public class Agent implements Subject{
         if(chosenTicket.getTicketType().equals("ride")){
             rideTickets.remove((RideTicket) chosenTicket);
         }
-        else if(chosenTicket.getTicketType() .equals("payment")){
+        else if(chosenTicket.getTicketType().equals("Payment")){
             paymentTickets.remove((PaymentTicket) chosenTicket);
         }
 
@@ -83,6 +83,7 @@ public class Agent implements Subject{
         String update = "Your ticket of type " + chosenTicket.getTicketType() + " was accepted";
         users.get(chosenTicket.getTicketMaker()).updateTicketsForUser(update);
     }
+
 }
 
 

@@ -1,3 +1,3 @@
 public interface InputData {
-    void Data();
+    void data();
 }

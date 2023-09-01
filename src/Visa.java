@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Visa implements PaymentMethod{
     @Override
-    public void Pay(double amount) {
+    public void pay(double amount) {
         do {
             Scanner Input = new Scanner(System.in);
             System.out.println("Please enter your 16-digits visa number!");

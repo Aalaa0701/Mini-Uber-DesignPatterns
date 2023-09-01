@@ -24,9 +24,6 @@ public class Bus extends RideInfo implements Ride{
 
     @Override
    public void requestRide() {
-        //making rides
-
-
         //checking if the bus is fully booked and move the ride from available to unavailable
         for(int i=0;i<busesAvailable.size();i++){
             if(busesAvailable.get(i).passengerCount == getMaxCapacity()){

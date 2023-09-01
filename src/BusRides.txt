@@ -6,4 +6,4 @@ Mostafa 4.9 0
 Hany 2.5 0
 Emad 5.0 0
 Omar 2.9 0
-Karim 2.9 20
+Karim 2.9 16

@@ -34,7 +34,8 @@ public class Main {
 
         // manage Unavailable Rides
         Timer timer = new Timer();
-        RideCompleted rideCompleted = new RideCompleted(normalRidesTaken,premiumRidesTaken,motorbikesTaken,busesFull,buses);
+        RideCompleted rideCompleted = new RideCompleted(normalRidesTaken,normalRides,premiumRidesTaken,premiumRides,motorbikesTaken
+        ,motorbikes,busesFull,buses);
         timer.schedule(rideCompleted, 1000, 200000);
 
         //system flow
@@ -44,7 +45,7 @@ public class Main {
            int choice = input.nextInt();
            if(choice == 1){
                Register register = new Register(users);
-               register.Data();
+               register.data();
                if(register.registrationSuccess){
                    loginOrRegistrationSuccess = true;
                    userLogged = register.getUserInfo().getUserName();
@@ -53,7 +54,7 @@ public class Main {
            }
            else if(choice == 2){
                 Login login = new Login(users);
-                login.Data();
+                login.data();
                loginOrRegistrationSuccess = true;
                userLogged = login.getUsername();
                break;

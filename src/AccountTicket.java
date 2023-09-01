@@ -2,7 +2,7 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.HashMap;
 
-public class AccountTicket{
+public class AccountTicket implements Request_ticket{
 int operationNumber;
     Map<String, User> usersMap;
 
@@ -13,6 +13,7 @@ int operationNumber;
     }
 
 
+    @Override
     public void request() {
         System.out.println("Forget Password click 1 ");
         System.out.println("Account Hacked click 2 (change Password)");

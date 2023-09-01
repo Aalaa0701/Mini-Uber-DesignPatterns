@@ -16,7 +16,7 @@ public class Register implements InputData, Validation{
 
 
     @Override
-    public void Data() {
+    public void data() {
         System.out.println(" Enter your username ");
         Scanner input = new Scanner(System.in);
         String username = input.nextLine();

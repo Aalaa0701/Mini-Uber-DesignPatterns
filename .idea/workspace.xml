@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1ae26b83-2702-456e-9127-343c58332cc0" name="Changes" comment="update" />
+    <list default="true" id="1ae26b83-2702-456e-9127-343c58332cc0" name="Changes" comment="update">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AccountTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AccountTicket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Agent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Agent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BusRides.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/BusRides.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cash.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cash.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileHandlingForSupportRead.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileHandlingForSupportWrite.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/InputData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InputData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Payment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PaymentMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PaymentMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PaymentTickets.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/PaymentTickets.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PremiumRides.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/PremiumRides.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Register.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RideCompleted.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RideCompleted.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RideTickets.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/RideTickets.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SupportTicketFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Users.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Visa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visa.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,31 +111,5 @@
     <MESSAGE value="implemented chain DesignPattern" />
     <MESSAGE value="update" />
     <option name="LAST_COMMIT_MESSAGE" value="update" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/RideTicket.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/RideTicket.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/RideTicket.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/RideTicket.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
